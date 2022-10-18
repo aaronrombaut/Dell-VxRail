@@ -1,0 +1,1938 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!--
+  Copyright (c) 2015 Dell Inc. or its subsidiaries. All Rights Reserved.
+
+  This software contains the intellectual property of Dell Inc. or is licensed to Dell Inc. from third parties.
+  Use of this software and the intellectual property contained therein is expressly limited to the terms and
+  conditions of the License Agreement under which it is provided by or on behalf of Dell Inc. or its subsidiaries.
+-->
+<InstallManifest Version="7.0.350" Build="27409467" MinimumVxRailVersion="7.0.010" UnsupportedVersion="4.7.999">
+    <Package InstallOrder="1">
+        <ComponentType>VXRAIL_Manager</ComponentType>
+        <DisplayName>VxRail Manager</DisplayName>
+        <Version>7.0.350</Version>
+        <Build>27409467</Build>
+        <File>bundles/VXRAIL_Manager-7.0.350.00000-27409467-updaterepo.zip</File>
+        <Size>871370301</Size>
+        <UpgradeTime>5</UpgradeTime>
+        <RebootFlag>True</RebootFlag>
+    </Package>
+    <Package InstallOrder="2">
+        <ComponentType>vCenter-Server-Appliance</ComponentType>
+        <DisplayName>VMware vCenter Server Appliance</DisplayName>
+        <Version>7.0.3</Version>
+        <Build>19234570</Build>
+        <File>bundles/VMware-vCenter-Server-Appliance-7.0.3.00300-19234570-patch-FP.iso</File>
+        <Size>7473731584</Size>
+        <UpgradeTime>50</UpgradeTime>
+        <RebootFlag>True</RebootFlag>
+    </Package>
+    <Package InstallOrder="100">
+        <ComponentType>ESXi</ComponentType>
+        <DisplayName>ESXi</DisplayName>
+        <Version>7.0.3</Version>
+        <Build>19193900</Build>
+	    <File>bundles/ESXi-7.0.3_19193900-73c682d3.zip</File>
+        <Size>403574165</Size>
+        <HighestFormatVersionSupported>11</HighestFormatVersionSupported>
+        <UpgradeTime>5</UpgradeTime>
+        <RebootFlag>True</RebootFlag>
+        <Package InstallOrder="1001">
+            <ComponentType>ESXi_VIB</ComponentType>
+            <DisplayName>Dell iSM for vSphere 7</DisplayName>
+            <Version>4.1.0.0.2410</Version>
+            <Build>DEL.700.0.0.15843807</Build>
+            <SystemName>dcism</SystemName>
+            <File>bundles/ISM-Dell-Web-4.1.0.0-2410.VIB-ESX7i-Live_A00.zip</File>
+            <TargetHardwareInfo>DELL</TargetHardwareInfo>
+            <TargetModelInfo Family="DELL">
+            </TargetModelInfo>
+            <Size>3187868</Size>
+            <UpgradeTime>1</UpgradeTime>
+            <RebootFlag>False</RebootFlag>
+         </Package>
+         <Package InstallOrder="1002">
+            <ComponentType>ESXi_VIB</ComponentType>
+            <DisplayName>PERCCLI VIB</DisplayName>
+            <Version>007.1910.0000.0000</Version>
+            <Build>01</Build>
+            <SystemName>vmware-perccli64</SystemName>
+            <File>bundles/VMWare-perccli64_007.1910.zip</File>
+            <Size>2163871</Size>
+            <UpgradeTime>1</UpgradeTime>
+            <RebootFlag>False</RebootFlag>
+        </Package>
+         <!--This package is for upgrade path from 4.7/4.5  -->
+         <Package InstallOrder="98">
+            <ComponentType>ESXi_VIB</ComponentType>
+            <DisplayName>DELL iSM</DisplayName>
+            <Version>3.5.0.ESXi6</Version>
+            <Build>1862</Build>
+            <SystemName>dcism</SystemName>
+            <File>bundles/ISM-Dell-Web-3.5.0-1862.VIB-ESX6i-Live_A00.zip</File>
+            <TargetHardwareInfo>DELL</TargetHardwareInfo>
+            <TargetModelInfo Family="DELL">
+            </TargetModelInfo>
+            <Size>445036</Size>
+            <UpgradeTime>1</UpgradeTime>
+            <RebootFlag>False</RebootFlag>
+         </Package>
+        <!--This package is for upgrade path from 7.0  -->
+         <Package InstallOrder="99">
+            <ComponentType>ESXi_VIB</ComponentType>
+            <DisplayName>Dell iSM for vSphere 7</DisplayName>
+            <Version>4.1.0.0.2410</Version>
+            <Build>DEL.700.0.0.15843807</Build>
+            <SystemName>dcism</SystemName>
+            <File>bundles/ISM-Dell-Web-4.1.0.0-2410.VIB-ESX7i-Live_A00.zip</File>
+            <TargetHardwareInfo>DELL</TargetHardwareInfo>
+            <TargetModelInfo Family="DELL">
+            </TargetModelInfo>
+            <Size>3187868</Size>
+            <UpgradeTime>1</UpgradeTime>
+            <RebootFlag>False</RebootFlag>
+         </Package>
+         <Package InstallOrder="126">
+            <ComponentType>ESXi_VIB</ComponentType>
+            <DisplayName>HBA355i Driver for Dell</DisplayName>
+            <Version>19.00.03.00</Version>
+            <Build>1OEM.700.1.0.15843807</Build>
+            <SystemName>lsi-msgpt35</SystemName>
+            <File>bundles/Broadcom-lsi-msgpt35_19.00.03.00-1OEM.700.1.0.15843807_18666021.zip</File>
+            <TargetHardwareInfo>DELL</TargetHardwareInfo>
+            <TargetModelInfo Family="DELL">
+            </TargetModelInfo>
+            <Size>192021</Size>
+            <UpgradeTime>1</UpgradeTime>
+            <RebootFlag>False</RebootFlag>
+         </Package>
+         <Package InstallOrder="101">
+            <ComponentType>VXRAIL_</ComponentType>
+            <DisplayName>VxRail VIB</DisplayName>
+            <Version>7.0.350</Version>
+            <Build>19240725</Build>
+            <File>bundles/VXRAIL_7.0.350-19240725.zip</File>
+            <Size>165560</Size>
+            <UpgradeTime>1</UpgradeTime>
+            <RebootFlag>False</RebootFlag>
+        </Package>
+        <Package InstallOrder="120">
+            <ComponentType>ESXI_VIB</ComponentType>
+            <DisplayName>NIC Driver for i350</DisplayName>
+            <Version>1.7.4.0</Version>
+            <Build>1OEM.700.1.0.15843807</Build>
+            <SystemName>igbn</SystemName>
+            <File>bundles/Intel-igbn_1.7.4.0-1OEM.700.1.0.15843807_18660358.zip</File>
+            <TargetHardwareInfo>DELL</TargetHardwareInfo>
+            <TargetModelInfo Family="DELL">
+            </TargetModelInfo>
+            <ReplaceTargetInfo>
+                <ReplaceTarget>
+                    <SystemName>net-igb</SystemName>
+                </ReplaceTarget>
+            </ReplaceTargetInfo>
+            <TargetNicModelInfo>
+                <Model>i350</Model>
+            </TargetNicModelInfo>
+            <Size>131708</Size>
+            <UpgradeTime>1</UpgradeTime>
+            <RebootFlag>False</RebootFlag>
+        </Package>
+        <Package InstallOrder="120">
+            <ComponentType>ESXI_VIB</ComponentType>
+            <DisplayName>NIC Driver for x520/x540/x550</DisplayName>
+            <Version>1.11.4.0</Version>
+            <Build>1OEM.700.1.0.15843807</Build>
+            <SystemName>ixgben</SystemName>
+            <File>bundles/Intel-ixgben_1.11.4.0-1OEM.700.1.0.15843807_18655854.zip</File>
+            <TargetHardwareInfo>DELL</TargetHardwareInfo>
+            <TargetModelInfo Family="DELL">
+            </TargetModelInfo>
+            <ReplaceTargetInfo>
+                <ReplaceTarget>
+                    <SystemName>net-ixgbe</SystemName>
+                </ReplaceTarget>
+            </ReplaceTargetInfo>
+            <TargetNicModelInfo>
+                <Model>x520</Model>
+                <Model>x540</Model>
+                <Model>x550</Model>
+            </TargetNicModelInfo>
+            <Size>201222</Size>
+            <UpgradeTime>1</UpgradeTime>
+            <RebootFlag>False</RebootFlag>
+        </Package>
+       <Package InstallOrder="120">
+            <ComponentType>ESXI_VIB</ComponentType>
+            <DisplayName>NIC Driver for x710</DisplayName>
+            <Version>2.1.5.0</Version>
+            <Build>1OEM.700.1.0.15843807</Build>
+            <SystemName>i40en</SystemName>
+            <File>bundles/Intel-i40en_2.1.5.0-1OEM.700.1.0.15843807_18631754.zip</File>
+            <TargetHardwareInfo>DELL</TargetHardwareInfo>
+            <TargetModelInfo Family="DELL">
+            </TargetModelInfo>
+            <ReplaceTargetInfo>
+                <ReplaceTarget>
+                    <SystemName>net-i40e</SystemName>
+                </ReplaceTarget>
+            </ReplaceTargetInfo>
+            <TargetNicModelInfo>
+                <Model>x710</Model>
+            </TargetNicModelInfo>
+            <Size>235227</Size>
+            <UpgradeTime>1</UpgradeTime>
+            <RebootFlag>False</RebootFlag>
+        </Package>
+        <Package InstallOrder="120">
+            <ComponentType>ESXI_VIB</ComponentType>
+            <DisplayName>NIC Driver for Broadcom bnxtnet</DisplayName>
+            <Version>219.0.29.0</Version>
+            <Build>1OEM.700.1.0.15843807</Build>
+            <SystemName>bnxtnet</SystemName>
+            <File>bundles/Broadcom-bnxt-Net-RoCE_219.0.235.0-1OEM.700.1.0.15843807_18660116.zip</File>
+            <TargetHardwareInfo>DELL</TargetHardwareInfo>
+            <TargetModelInfo Family="DELL">
+            </TargetModelInfo>
+            <TargetNicModelInfo>
+                <Model>bcm57412</Model>
+                <Model>bcm57414</Model>
+                <Model>bcm57416</Model>
+                <Model>14E4.1751</Model>
+            </TargetNicModelInfo>
+            <Size>395877</Size>
+            <UpgradeTime>1</UpgradeTime>
+            <RebootFlag>False</RebootFlag>
+        </Package>
+        <Package InstallOrder="120">
+            <ComponentType>ESXI_VIB</ComponentType>
+            <DisplayName>NIC Driver for Broadcom bnxtroce</DisplayName>
+            <Version>219.0.13.0</Version>
+            <Build>1OEM.700.1.0.15843807</Build>
+            <SystemName>bnxtroce</SystemName>
+            <File>bundles/Broadcom-bnxt-Net-RoCE_219.0.235.0-1OEM.700.1.0.15843807_18660116.zip</File>
+            <TargetHardwareInfo>DELL</TargetHardwareInfo>
+            <TargetModelInfo Family="DELL">
+            </TargetModelInfo>
+            <TargetNicModelInfo>
+                <Model>bcm57412</Model>
+                <Model>bcm57414</Model>
+                <Model>bcm57416</Model>
+            </TargetNicModelInfo>
+            <Size>395877</Size>
+            <UpgradeTime>1</UpgradeTime>
+            <RebootFlag>False</RebootFlag>
+        </Package>
+        <Package InstallOrder="120">
+            <ComponentType>ESXI_VIB</ComponentType>
+            <DisplayName>NIC Driver for Mellanox CX-4 nmlx5-core</DisplayName>
+            <Version>4.21.71.101</Version>
+            <Build>1OEM.702.0.0.17630552</Build>
+            <SystemName>nmlx5-core</SystemName>
+            <File>bundles/Mellanox-nmlx5_4.21.71.101-1OEM.702.0.0.17630552_18117880.zip</File>
+            <TargetHardwareInfo>DELL</TargetHardwareInfo>
+            <TargetModelInfo Family="DELL">
+            </TargetModelInfo>
+            <TargetNicModelInfo>
+                <Model>15B3.1015</Model>
+            </TargetNicModelInfo>
+            <Size>775287</Size>
+            <UpgradeTime>1</UpgradeTime>
+            <RebootFlag>False</RebootFlag>
+        </Package>
+        <Package InstallOrder="120">
+            <ComponentType>ESXI_VIB</ComponentType>
+            <DisplayName>NIC Driver for Mellanox CX-4 nmlx5-rdma</DisplayName>
+            <Version>4.21.71.101</Version>
+            <Build>1OEM.702.0.0.17630552</Build>
+            <SystemName>nmlx5-rdma</SystemName>
+            <File>bundles/Mellanox-nmlx5_4.21.71.101-1OEM.702.0.0.17630552_18117880.zip</File>
+            <TargetHardwareInfo>DELL</TargetHardwareInfo>
+            <TargetModelInfo Family="DELL">
+            </TargetModelInfo>
+            <TargetNicModelInfo>
+                <Model>15B3.1015</Model>
+            </TargetNicModelInfo>
+            <Size>775287</Size>
+            <UpgradeTime>1</UpgradeTime>
+            <RebootFlag>False</RebootFlag>
+         </Package>
+         <Package InstallOrder="120">
+            <ComponentType>ESXI_VIB</ComponentType>
+            <DisplayName>NIC Driver for Qlogic411XX qedentv</DisplayName>
+            <Version>3.40.39.0</Version>
+            <Build>1OEM.700.1.0.15843807</Build>
+            <SystemName>qedentv</SystemName>
+            <File>bundles/MRVL-E4-CNA-Driver-Bundle_5.0.278.0-1OEM.700.1.0.15843807_18563235.zip</File>
+            <TargetHardwareInfo>DELL</TargetHardwareInfo>
+            <TargetModelInfo Family="DELL">
+            </TargetModelInfo>
+            <ReplaceTargetInfo>
+                <ReplaceTarget>
+                    <SystemName>scsi-qedil</SystemName>
+                </ReplaceTarget>
+            </ReplaceTargetInfo>
+            <TargetNicModelInfo>
+                <Model>1077.8070</Model>
+            </TargetNicModelInfo>
+            <Size>5242057</Size>
+            <RemoveUpgradeVIB>True</RemoveUpgradeVIB>
+            <UpgradeTime>1</UpgradeTime>
+            <RebootFlag>False</RebootFlag>
+        </Package>
+        <Package InstallOrder="120">
+            <ComponentType>ESXI_VIB</ComponentType>
+            <DisplayName>NIC Driver for Qlogic411XX qedrntv</DisplayName>
+            <Version>3.40.37.0</Version>
+            <Build>1OEM.700.1.0.15843807</Build>
+            <SystemName>qedrntv</SystemName>
+            <File>bundles/MRVL-E4-CNA-Driver-Bundle_5.0.278.0-1OEM.700.1.0.15843807_18563235.zip</File>
+            <TargetHardwareInfo>DELL</TargetHardwareInfo>
+            <TargetModelInfo Family="DELL">
+            </TargetModelInfo>
+            <ReplaceTargetInfo>
+                <ReplaceTarget>
+                    <SystemName>scsi-qedil</SystemName>
+                </ReplaceTarget>
+            </ReplaceTargetInfo>
+            <TargetNicModelInfo>
+                <Model>1077.8070</Model>
+            </TargetNicModelInfo>
+            <Size>5242057</Size>
+            <RemoveUpgradeVIB>True</RemoveUpgradeVIB>
+            <UpgradeTime>1</UpgradeTime>
+            <RebootFlag>False</RebootFlag>
+        </Package>
+        <Package InstallOrder="120">
+            <ComponentType>ESXI_VIB</ComponentType>
+            <DisplayName>NIC Driver for Mellanox CX-5 nmlx5-core</DisplayName>
+            <Version>4.21.71.101</Version>
+            <Build>1OEM.702.0.0.17630552</Build>
+            <SystemName>nmlx5-core</SystemName>
+            <File>bundles/Mellanox-nmlx5_4.21.71.101-1OEM.702.0.0.17630552_18117880.zip</File>
+            <TargetHardwareInfo>DELL</TargetHardwareInfo>
+            <TargetModelInfo Family="DELL">
+            </TargetModelInfo>
+            <TargetNicModelInfo>
+                <Model>15B3.1017</Model>
+                <Model>15B3.1019</Model>
+            </TargetNicModelInfo>
+            <Size>775287</Size>
+            <UpgradeTime>1</UpgradeTime>
+            <RebootFlag>False</RebootFlag>
+        </Package>
+        <Package InstallOrder="120">
+            <ComponentType>ESXI_VIB</ComponentType>
+            <DisplayName>NIC Driver for Mellanox CX-5 nmlx5-rdma</DisplayName>
+            <Version>4.21.71.101</Version>
+            <Build>1OEM.702.0.0.17630552</Build>
+            <SystemName>nmlx5-rdma</SystemName>
+            <File>bundles/Mellanox-nmlx5_4.21.71.101-1OEM.702.0.0.17630552_18117880.zip</File>
+            <TargetHardwareInfo>DELL</TargetHardwareInfo>
+            <TargetModelInfo Family="DELL">
+            </TargetModelInfo>
+            <TargetNicModelInfo>
+                <Model>15B3.1017</Model>
+                <Model>15B3.1019</Model>
+            </TargetNicModelInfo>
+            <Size>775287</Size>
+            <UpgradeTime>1</UpgradeTime>
+            <RebootFlag>False</RebootFlag>
+        </Package>
+        <Package InstallOrder="120">
+            <ComponentType>ESXI_VIB</ComponentType>
+            <DisplayName>Intel NIC Driver for E810</DisplayName>
+            <Version>1.6.2.0</Version>
+            <Build>1OEM.700.1.0.15843807</Build>
+            <SystemName>icen</SystemName>
+            <File>bundles/Intel-icen_1.6.2.0-1OEM.700.1.0.15843807_18279783.zip</File>
+            <TargetHardwareInfo>DELL</TargetHardwareInfo>
+            <TargetModelInfo Family="DELL">
+            </TargetModelInfo>
+            <TargetNicModelInfo>
+                <Model>8086.159B</Model>
+            </TargetNicModelInfo>
+            <Size>490571</Size>
+            <UpgradeTime>1</UpgradeTime>
+            <RebootFlag>False</RebootFlag>
+        </Package>
+        <Package InstallOrder="19">
+            <ComponentType>BMC</ComponentType>
+            <DisplayName>Interim iDRAC Upgrade for 13G</DisplayName>
+            <Version>2.70.70.70</Version>
+            <Build></Build>
+            <File>bundles/iDRAC-with-Lifecycle-Controller_Firmware_DNH17_WN64_2.70.70.70_A00.EXE</File><!--2.60.60.60 A rev will be released at 6/15-->
+            <TargetHardwareInfo>DELL</TargetHardwareInfo>
+            <TargetModelInfo Family="DELL">
+                <Model Alias="Dell EMC VxRail E460F">VxRail E460F</Model>
+                <Model Alias="Dell EMC VxRail E460">VxRail E460</Model>
+                <Model Alias="Dell EMC VxRail V470F">VxRail V470F</Model>
+                <Model Alias="Dell EMC VxRail V470">VxRail V470</Model>
+                <Model Alias="Dell EMC VxRail P470F">VxRail P470F</Model>
+                <Model Alias="Dell EMC VxRail P470">VxRail P470</Model>
+                <Model Alias="Dell EMC VxRail S470">VxRail S470</Model>
+            </TargetModelInfo>
+            <Size>118002992</Size>
+            <UpgradeTime>5</UpgradeTime>
+            <RebootFlag>True</RebootFlag>
+        </Package>
+        <Package InstallOrder="20">
+            <ComponentType>BMC</ComponentType>
+            <DisplayName>DELL iDRAC for 13G</DisplayName>
+            <Version>2.82.82.82</Version>
+            <Build></Build>
+            <File>bundles/iDRAC-with-Lifecycle-Controller_Firmware_WGNHP_WN64_2.82.82.82_A00_01.EXE</File><!--2.60.60.60 A rev will be released at 6/15-->
+            <TargetHardwareInfo>DELL</TargetHardwareInfo>
+            <TargetModelInfo Family="DELL">
+                <Model Alias="Dell EMC VxRail E460F">VxRail E460F</Model>
+                <Model Alias="Dell EMC VxRail E460">VxRail E460</Model>
+                <Model Alias="Dell EMC VxRail V470F">VxRail V470F</Model>
+                <Model Alias="Dell EMC VxRail V470">VxRail V470</Model>
+                <Model Alias="Dell EMC VxRail P470F">VxRail P470F</Model>
+                <Model Alias="Dell EMC VxRail P470">VxRail P470</Model>
+                <Model Alias="Dell EMC VxRail S470">VxRail S470</Model>
+            </TargetModelInfo>
+            <Size>120464352</Size>
+            <UpgradeTime>5</UpgradeTime>
+            <RebootFlag>True</RebootFlag>
+        </Package>
+        <Package InstallOrder="19">
+            <ComponentType>BMC</ComponentType>
+            <DisplayName>Interim iDRAC Upgrade for 14G</DisplayName>
+            <Version>3.34.34.34</Version>
+            <Build></Build>
+            <File>bundles/iDRAC-with-Lifecycle-Controller_Firmware_3HT97_WN64_3.34.34.34_A00.EXE</File>
+            <TargetHardwareInfo>DELL</TargetHardwareInfo>
+            <TargetModelInfo Family="DELL">
+                <Model Alias="Dell EMC VxRail G560">VxRail G560</Model>
+                <Model Alias="Dell EMC VxRail G560F">VxRail G560F</Model>
+                <Model Alias="Dell EMC VxRail E560F">VxRail E560F</Model>
+                <Model Alias="Dell EMC VxRail E560">VxRail E560</Model>
+                <Model Alias="Dell EMC VxRail V570F">VxRail V570F</Model>
+                <Model Alias="Dell EMC VxRail V570">VxRail V570</Model>
+                <Model Alias="Dell EMC VxRail P570F">VxRail P570F</Model>
+                <Model Alias="Dell EMC VxRail P570">VxRail P570</Model>
+                <Model Alias="Dell EMC VxRail S570">VxRail S570</Model>
+            </TargetModelInfo>
+            <Size>150250864</Size>
+            <UpgradeTime>5</UpgradeTime>
+            <RebootFlag>True</RebootFlag>
+        </Package>
+        <Package InstallOrder="20">
+            <ComponentType>BMC</ComponentType>
+            <DisplayName>DELL iDRAC for 14G</DisplayName>
+            <Version>5.00.10.20</Version>
+            <Build></Build>
+            <File>bundles/iDRAC-with-Lifecycle-Controller_Firmware_YCFHY_WN64_5.00.10.20_A00.EXE</File>
+            <TargetHardwareInfo>DELL</TargetHardwareInfo>
+            <TargetModelInfo Family="DELL">
+                <Model Alias="Dell EMC VxRail G560">VxRail G560</Model>
+                <Model Alias="Dell EMC VxRail G560F">VxRail G560F</Model>
+                <Model Alias="Dell EMC VxRail E560F">VxRail E560F</Model>
+                <Model Alias="Dell EMC VxRail E560">VxRail E560</Model>
+                <Model Alias="Dell EMC VxRail V570F">VxRail V570F</Model>
+                <Model Alias="Dell EMC VxRail V570">VxRail V570</Model>
+                <Model Alias="Dell EMC VxRail P570F">VxRail P570F</Model>
+                <Model Alias="Dell EMC VxRail P570">VxRail P570</Model>
+                <Model Alias="Dell EMC VxRail S570">VxRail S570</Model>
+                <Model Alias="Dell EMC VxRail E560N">VxRail E560N</Model>
+                <Model Alias="Dell EMC VxRail P580N">VxRail P580N</Model>
+                <Model Alias="Dell EMC VxRail D560">VxRail D560</Model>
+                <Model Alias="Dell EMC VxRail D560F">VxRail D560F</Model>
+            </TargetModelInfo>
+            <Size>216843992</Size>
+            <UpgradeTime>5</UpgradeTime>
+            <RebootFlag>True</RebootFlag>
+        </Package>
+        <Package InstallOrder="20">
+            <ComponentType>BMC</ComponentType>
+            <DisplayName>iDRAC for R6515/R7515</DisplayName>
+            <Version>5.00.10.20</Version>
+            <Build></Build>
+            <File>bundles/iDRAC-with-Lifecycle-Controller_Firmware_YCFHY_WN64_5.00.10.20_A00.EXE</File>
+            <TargetHardwareInfo>DELL</TargetHardwareInfo>
+            <TargetModelInfo Family="DELL">
+                <Model Alias="Dell EMC VxRail E665">VxRail E665</Model>
+                <Model Alias="Dell EMC VxRail E665F">VxRail E665F</Model>
+                <Model Alias="Dell EMC VxRail E665N">VxRail E665N</Model>
+                <Model Alias="Dell EMC VxRail P675F">VxRail P675F</Model>
+                <Model Alias="Dell EMC VxRail P675N">VxRail P675N</Model>
+            </TargetModelInfo>
+            <Size>216843992</Size>
+            <UpgradeTime>5</UpgradeTime>
+            <RebootFlag>True</RebootFlag>
+        </Package>
+        <Package InstallOrder="20">
+            <ComponentType>BMC</ComponentType>
+            <DisplayName>iDRAC for R650</DisplayName>
+            <Version>5.00.10.20</Version>
+            <Build></Build>
+            <File>bundles/iDRAC-with-Lifecycle-Controller_Firmware_YCFHY_WN64_5.00.10.20_A00.EXE</File>
+            <TargetHardwareInfo>DELL</TargetHardwareInfo>
+            <TargetModelInfo Family="DELL">
+                <Model Alias="Dell EMC VxRail E660">VxRail E660</Model>
+                <Model Alias="Dell EMC VxRail E660F">VxRail E660F</Model>
+                <Model Alias="Dell EMC VxRail E660N">VxRail E660N</Model>
+            </TargetModelInfo>
+            <Size>216843992</Size>
+            <UpgradeTime>5</UpgradeTime>
+            <RebootFlag>True</RebootFlag>
+        </Package>
+        <Package InstallOrder="20">
+            <ComponentType>BMC</ComponentType>
+            <DisplayName>iDRAC for R750</DisplayName>
+            <Version>5.00.10.20</Version>
+            <Build></Build>
+            <File>bundles/iDRAC-with-Lifecycle-Controller_Firmware_YCFHY_WN64_5.00.10.20_A00.EXE</File>
+            <TargetHardwareInfo>DELL</TargetHardwareInfo>
+            <TargetModelInfo Family="DELL">
+                <Model Alias="Dell EMC VxRail P670F">VxRail P670F</Model>
+                <Model Alias="Dell EMC VxRail V670F">VxRail V670F</Model>
+                <Model Alias="Dell EMC VxRail S670">VxRail S670</Model>
+                <Model Alias="Dell EMC VxRail P670N">VxRail P670N</Model>
+            </TargetModelInfo>
+            <Size>216843992</Size>
+            <UpgradeTime>5</UpgradeTime>
+            <RebootFlag>True</RebootFlag>
+        </Package>
+	    <Package InstallOrder="29">
+            <ComponentType>NIC_Firmware</ComponentType>
+            <DisplayName>NIC Firmware for bcm5741X</DisplayName>
+            <Version>21.85.21.91</Version>
+            <Build></Build>
+            <SystemName>nic-fw-bcm5741X</SystemName>
+            <File>bundles/Network_Firmware_YPXWJ_WN64_21.85.21.91.EXE</File>
+            <TargetHardwareInfo>DELL</TargetHardwareInfo>
+            <TargetModelInfo Family="DELL">
+            </TargetModelInfo>
+            <TargetNicModelInfo>
+                <Model>bcm57412</Model>
+                <Model>bcm57414</Model>
+                <Model>bcm57416</Model>
+                <Model>14E4.1751</Model>
+            </TargetNicModelInfo>
+            <Size>27282128</Size>
+            <UpgradeTime>5</UpgradeTime>
+            <RebootFlag>True</RebootFlag>
+        </Package>
+        <Package InstallOrder="30">
+            <ComponentType>BIOS</ComponentType>
+            <DisplayName>BIOS for 13G</DisplayName>
+            <Version>2.13.0</Version>
+            <Build></Build>
+            <File>bundles/BIOS_74DF9_WN64_2.13.0.EXE</File>
+            <TargetHardwareInfo>DELL</TargetHardwareInfo>
+            <TargetModelInfo Family="DELL">
+                <Model Alias="Dell EMC VxRail E460F">VxRail E460F</Model>
+                <Model Alias="Dell EMC VxRail E460">VxRail E460</Model>
+                <Model Alias="Dell EMC VxRail V470F">VxRail V470F</Model>
+                <Model Alias="Dell EMC VxRail V470">VxRail V470</Model>
+                <Model Alias="Dell EMC VxRail P470F">VxRail P470F</Model>
+                <Model Alias="Dell EMC VxRail P470">VxRail P470</Model>
+                <Model Alias="Dell EMC VxRail S470">VxRail S470</Model>
+            </TargetModelInfo>
+            <Size>18834008</Size>
+            <UpgradeTime>5</UpgradeTime>
+            <RebootFlag>True</RebootFlag>
+        </Package>
+        <Package InstallOrder="30">
+            <ComponentType>BIOS</ComponentType>
+            <DisplayName>BIOS for 14G</DisplayName>
+            <Version>2.12.2</Version>
+            <Build></Build>
+            <File>bundles/BIOS_4CRD2_WN64_2.12.2.EXE</File>
+            <TargetHardwareInfo>DELL</TargetHardwareInfo>
+            <TargetModelInfo Family="DELL">
+                <Model Alias="Dell EMC VxRail E560F">VxRail E560F</Model>
+                <Model Alias="Dell EMC VxRail E560">VxRail E560</Model>
+                <Model Alias="Dell EMC VxRail E560N">VxRail E560N</Model>
+                <Model Alias="Dell EMC VxRail V570F">VxRail V570F</Model>
+                <Model Alias="Dell EMC VxRail V570">VxRail V570</Model>
+                <Model Alias="Dell EMC VxRail P570F">VxRail P570F</Model>
+                <Model Alias="Dell EMC VxRail P570">VxRail P570</Model>
+                <Model Alias="Dell EMC VxRail S570">VxRail S570</Model>
+            </TargetModelInfo>
+            <Size>28888384</Size>
+            <UpgradeTime>5</UpgradeTime>
+            <RebootFlag>True</RebootFlag>
+        </Package>
+        <Package InstallOrder="30">
+            <ComponentType>BIOS</ComponentType>
+            <DisplayName>BIOS for G560/G560F</DisplayName>
+            <Version>2.12.2</Version>
+            <Build></Build>
+            <File>bundles/BIOS_RHYDH_WN64_2.12.2.EXE</File>
+            <TargetHardwareInfo>DELL</TargetHardwareInfo>
+            <TargetModelInfo Family="DELL">
+                <Model Alias="Dell EMC VxRail G560">VxRail G560</Model>
+                <Model Alias="Dell EMC VxRail G560F">VxRail G560F</Model>
+            </TargetModelInfo>
+            <Size>28611664</Size>
+            <UpgradeTime>5</UpgradeTime>
+            <RebootFlag>True</RebootFlag>
+        </Package>
+	<Package InstallOrder="30">
+            <ComponentType>BIOS</ComponentType>
+            <DisplayName>BIOS for 14G XR2</DisplayName>
+            <Version>2.12.2</Version>
+            <Build></Build>
+            <File>bundles/BIOS_FG1CT_WN64_2.12.2.EXE</File>
+            <TargetHardwareInfo>DELL</TargetHardwareInfo>
+            <TargetModelInfo Family="DELL">
+                <Model Alias="Dell EMC VxRail D560">VxRail D560</Model>
+                <Model Alias="Dell EMC VxRail D560F">VxRail D560F</Model>
+            </TargetModelInfo>
+            <Size>28453968</Size>
+            <UpgradeTime>5</UpgradeTime>
+            <RebootFlag>True</RebootFlag>
+        </Package>
+        <Package InstallOrder="30">
+            <ComponentType>BIOS</ComponentType>
+            <DisplayName>BIOS for R840</DisplayName>
+            <Version>2.12.2</Version>
+            <Build></Build>
+            <File>bundles/BIOS_PHGVK_WN64_2.12.2.EXE</File>
+            <TargetHardwareInfo>DELL</TargetHardwareInfo>
+            <TargetModelInfo Family="DELL">
+                <Model Alias="Dell EMC VxRail P580N">VxRail P580N</Model>
+            </TargetModelInfo>
+            <Size>28911504</Size>
+            <UpgradeTime>5</UpgradeTime>
+            <RebootFlag>True</RebootFlag>
+        </Package>
+        <Package InstallOrder="30">
+            <ComponentType>BIOS</ComponentType>
+            <DisplayName>BIOS for 15G R6515/R7515</DisplayName>
+            <Version>2.5.5</Version>
+            <Build></Build>
+            <File>bundles/BIOS_CFFKK_WN64_2.5.5.EXE</File>
+            <TargetHardwareInfo>DELL</TargetHardwareInfo>
+            <TargetModelInfo Family="DELL">
+                <Model Alias="Dell EMC VxRail E665">VxRail E665</Model>
+                <Model Alias="Dell EMC VxRail E665F">VxRail E665F</Model>
+                <Model Alias="Dell EMC VxRail E665N">VxRail E665N</Model>
+                <Model Alias="Dell EMC VxRail P675F">VxRail P675F</Model>
+                <Model Alias="Dell EMC VxRail P675N">VxRail P675N</Model>
+            </TargetModelInfo>
+            <Size>32474192</Size>
+            <UpgradeTime>5</UpgradeTime>
+            <RebootFlag>True</RebootFlag>
+        </Package>
+        <Package InstallOrder="30">
+            <ComponentType>BIOS</ComponentType>
+            <DisplayName>BIOS for 15G R650/R750</DisplayName>
+            <Version>1.3.8</Version>
+            <Build></Build>
+            <File>bundles/BIOS_CNDYW_WN64_1.3.8.EXE</File>
+            <TargetHardwareInfo>DELL</TargetHardwareInfo>
+            <TargetModelInfo Family="DELL">
+                <Model Alias="Dell EMC VxRail E660">VxRail E660</Model>
+                <Model Alias="Dell EMC VxRail E660F">VxRail E660F</Model>
+                <Model Alias="Dell EMC VxRail P670F">VxRail P670F</Model>
+                <Model Alias="Dell EMC VxRail V670F">VxRail V670F</Model>
+                <Model Alias="Dell EMC VxRail S670">VxRail S670</Model>
+                <Model Alias="Dell EMC VxRail E660N">VxRail E660N</Model>
+                <Model Alias="Dell EMC VxRail P670N">VxRail P670N</Model>
+            </TargetModelInfo>
+            <Size>22158024</Size>
+            <UpgradeTime>5</UpgradeTime>
+            <RebootFlag>True</RebootFlag>
+        </Package>
+        <Package InstallOrder="40">
+            <ComponentType>NIC_Firmware</ComponentType>
+            <DisplayName>NIC Firmware for i350/x520/x540/x550</DisplayName>
+            <Version>20.5.13</Version>
+            <Build></Build>
+            <SystemName>nic-fw-i350-x5x0</SystemName>
+            <File>bundles/Network_Firmware_HR5TP_WN64_20.5.13_A00.EXE</File>
+            <TargetHardwareInfo>DELL</TargetHardwareInfo>
+            <TargetModelInfo Family="DELL">
+            </TargetModelInfo>
+            <TargetNicModelInfo>
+                <Model>i350</Model>
+                <Model>x520</Model>
+                <Model>x540</Model>
+                <Model>x550</Model>
+            </TargetNicModelInfo>
+            <Size>16182960</Size>
+            <UpgradeTime>5</UpgradeTime>
+            <RebootFlag>True</RebootFlag>
+        </Package>
+        <Package InstallOrder="40">
+            <ComponentType>NIC_Firmware</ComponentType>
+            <DisplayName>NIC Firmware for x710</DisplayName>
+            <Version>20.5.13</Version>
+            <Build></Build>
+            <SystemName>nic-fw-x710</SystemName>
+	        <File>bundles/Network_Firmware_M20T0_WN64_20.5.13_A00.EXE</File>
+            <TargetHardwareInfo>DELL</TargetHardwareInfo>
+            <TargetModelInfo Family="DELL">
+            </TargetModelInfo>
+            <TargetNicModelInfo>
+                <Model>x710</Model>
+            </TargetNicModelInfo>
+            <Size>39541424</Size>
+            <UpgradeTime>5</UpgradeTime>
+            <RebootFlag>True</RebootFlag>
+        </Package>
+        <Package InstallOrder="40">
+            <ComponentType>NIC_Firmware</ComponentType>
+            <DisplayName>NIC Firmware for Mellanox CX-4</DisplayName>
+            <Version>14.31.20.06</Version>
+            <Build></Build>
+            <SystemName>nic-fw-mellanox-cx-4</SystemName>
+            <File>bundles/Network_Firmware_YTPJW_WN64_14.31.20.06.EXE</File>
+            <TargetHardwareInfo>DELL</TargetHardwareInfo>
+            <TargetModelInfo Family="DELL">
+            </TargetModelInfo>
+            <TargetNicModelInfo>
+                <Model>15B3.1015</Model>
+            </TargetNicModelInfo>
+            <Size>25547512</Size>
+            <UpgradeTime>5</UpgradeTime>
+            <RebootFlag>True</RebootFlag>
+        </Package>
+        <Package InstallOrder="40">
+            <ComponentType>NIC_Firmware</ComponentType>
+            <DisplayName>NIC Firmware for Qlogic411XX</DisplayName>
+            <Version>15.30.05</Version>
+            <Build></Build>
+            <SystemName>nic-fw-qlogic411XX</SystemName>
+            <File>bundles/Network_Firmware_T6R24_WN64_15.30.05_A00-00.EXE</File>
+            <TargetHardwareInfo>DELL</TargetHardwareInfo>
+            <TargetModelInfo Family="DELL">
+            </TargetModelInfo>
+            <TargetNicModelInfo>
+                <Model>1077.8070</Model>
+            </TargetNicModelInfo>
+            <Size>7655600</Size>
+            <UpgradeTime>5</UpgradeTime>
+            <RebootFlag>True</RebootFlag>
+        </Package>
+        <Package InstallOrder="40">
+            <ComponentType>NIC_Firmware</ComponentType>
+            <DisplayName>NIC Firmware for Mellanox CX-5</DisplayName>
+            <Version>16.31.20.06</Version>
+            <Build></Build>
+            <SystemName>nic-fw-mellanox-cx-5</SystemName>
+            <File>bundles/Network_Firmware_3CJ0V_WN64_16.31.20.06.EXE</File>
+            <TargetHardwareInfo>DELL</TargetHardwareInfo>
+            <TargetModelInfo Family="DELL">
+            </TargetModelInfo>
+            <TargetNicModelInfo>
+                <Model>15B3.1017</Model>
+                <Model>15B3.1019</Model>
+            </TargetNicModelInfo>
+            <Size>26298296</Size>
+            <UpgradeTime>5</UpgradeTime>
+            <RebootFlag>True</RebootFlag>
+        </Package>
+         <Package InstallOrder="45">
+            <ComponentType>DISK_CTLR_Firmware</ComponentType>
+            <DisplayName>PERC H755 Firmware for Dell</DisplayName>
+            <Version>52.16.1-4074</Version>
+            <Build></Build>
+            <File>bundles/SAS-RAID_Firmware_KVYMT_WN64_52.16.1-4074_A04.EXE</File>
+            <TargetHardwareInfo>DELL</TargetHardwareInfo>
+            <TargetModelInfo Family="DELL">
+            </TargetModelInfo>
+            <TargetComponentModelInfo>
+                <Model>perch755</Model>
+            </TargetComponentModelInfo>
+            <Size>23094664</Size>
+            <UpgradeTime>5</UpgradeTime>
+            <RebootFlag>True</RebootFlag>
+        </Package>
+        <Package InstallOrder="45">
+            <ComponentType>DISK_CTLR_Firmware</ComponentType>
+            <DisplayName>Disk Controller for HBA 330 Adapter</DisplayName>
+            <Version>16.17.01.00</Version>
+            <Build></Build>
+            <File>bundles/SAS-Non-RAID_Firmware_NKNVC_WN64_16.17.01.00_A08.EXE</File>
+            <TargetHardwareInfo>DELL</TargetHardwareInfo>
+	        <TargetModelInfo Family="DELL">
+            </TargetModelInfo>
+            <TargetComponentModelInfo>
+                <Model>hba330adp</Model>
+            </TargetComponentModelInfo>
+            <Size>7696472</Size>
+            <UpgradeTime>5</UpgradeTime>
+            <RebootFlag>True</RebootFlag>
+     </Package>
+     <Package InstallOrder="45">
+            <ComponentType>DISK_CTLR_Firmware</ComponentType>
+            <DisplayName>Disk Controller for HBA 330 Mini</DisplayName>
+            <Version>16.17.01.00</Version>
+            <Build></Build>
+            <File>bundles/SAS-Non-RAID_Firmware_124X2_WN64_16.17.01.00_A08_02.EXE</File>
+            <TargetHardwareInfo>DELL</TargetHardwareInfo>
+            <TargetModelInfo Family="DELL">
+            </TargetModelInfo>
+            <TargetComponentModelInfo>
+                <Model>hba330mini</Model>
+            </TargetComponentModelInfo>
+            <Size>7686016</Size>
+            <UpgradeTime>5</UpgradeTime>
+            <RebootFlag>True</RebootFlag>
+        </Package>
+
+        <Package InstallOrder="45">
+            <ComponentType>DISK_CTLR_Firmware</ComponentType>
+            <DisplayName>HBA355i Firmware for Dell</DisplayName>
+            <Version>17.15.08.00</Version>
+            <Build></Build>
+            <File>bundles/SAS-Non-RAID_Firmware_4CJY9_WN64_17.15.08.00_A03.EXE</File>
+            <TargetHardwareInfo>DELL</TargetHardwareInfo>
+            <TargetModelInfo Family="DELL">
+            </TargetModelInfo>
+            <TargetComponentModelInfo>
+                <Model>hba355i</Model>
+            </TargetComponentModelInfo>
+            <Size>11708376</Size>
+            <UpgradeTime>5</UpgradeTime>
+            <RebootFlag>True</RebootFlag>
+        </Package>
+        <Package InstallOrder="50">
+            <ComponentType>Disk_Firmware</ComponentType>
+            <DisplayName>Disk Firmware for Toshiba PM4 WI</DisplayName>
+            <Version>AS10</Version>
+            <Build></Build>
+            <File>bundles/SAS-Drive_Firmware_1DJXX_WN64_AS10_A00.EXE</File>
+            <TargetHardwareInfo>DELL</TargetHardwareInfo>
+            <TargetModelInfo Family="DELL">
+            </TargetModelInfo>
+            <TargetComponentModelInfo>
+                <Model>PX05SMB040Y</Model>
+                <Model>PX05SMB080Y</Model>
+                <Model>PX05SMB160Y</Model>
+            </TargetComponentModelInfo>
+            <Size>10840696</Size>
+            <UpgradeTime>5</UpgradeTime>
+            <RebootFlag>True</RebootFlag>
+        </Package>
+        <Package InstallOrder="50">
+            <ComponentType>Disk_Firmware</ComponentType>
+            <DisplayName>Disk Firmware for Samsung PM863a RI</DisplayName>
+            <Version>GC5B</Version>
+            <Build></Build>
+            <File>bundles/Serial-ATA_Firmware_P2YRJ_WN64_GC5B_A00.EXE</File>
+            <TargetHardwareInfo>DELL</TargetHardwareInfo>
+            <TargetModelInfo Family="DELL">
+            </TargetModelInfo>
+            <TargetComponentModelInfo>
+                <Model>MZ7LM1T9HMJP0D3</Model>
+                <Model>MZ7LM3T8HMLP0D3</Model>
+            </TargetComponentModelInfo>
+            <Size>10166232</Size>
+            <UpgradeTime>5</UpgradeTime>
+            <RebootFlag>True</RebootFlag>
+        </Package>
+        <Package InstallOrder="50">
+            <ComponentType>Disk_Firmware</ComponentType>
+            <DisplayName>Disk Firmware for Intel 4500 RI</DisplayName>
+            <Version>DL5C</Version>
+            <Build></Build>
+            <File>bundles/Serial-ATA_Firmware_V141M_WN64_DL5C_A00.EXE</File>
+            <TargetHardwareInfo>DELL</TargetHardwareInfo>
+            <TargetModelInfo Family="DELL">
+            </TargetModelInfo>
+            <TargetComponentModelInfo>
+                <Model>SSDSC2KB019T7R</Model>
+                <Model>SSDSC2KB038T7R</Model>
+            </TargetComponentModelInfo>
+            <Size>10257320</Size>
+            <UpgradeTime>5</UpgradeTime>
+            <RebootFlag>True</RebootFlag>
+        </Package>
+        <Package InstallOrder="60">
+            <ComponentType>Disk_Firmware</ComponentType>
+            <DisplayName>Disk Firmware for Samsung PM1725a</DisplayName>
+            <Version>1.2.1</Version>
+            <Build></Build>
+            <File>bundles/Express-Flash-PCIe-SSD_Firmware_34C36_WN64_1.2.1_A06.EXE</File>
+            <TargetHardwareInfo>DELL</TargetHardwareInfo>
+            <TargetModelInfo Family="DELL">
+            </TargetModelInfo>
+            <TargetComponentModelInfo>
+                <Model>Dell Express Flash PM1725a 800GB SFF</Model>
+                <Model>Dell Express Flash PM1725a 1.6TB SFF</Model>
+            </TargetComponentModelInfo>
+            <Size>17180072</Size>
+            <UpgradeTime>5</UpgradeTime>
+            <RebootFlag>True</RebootFlag>
+        </Package>
+        <Package InstallOrder="50">
+            <ComponentType>Disk_Firmware</ComponentType>
+            <DisplayName>Disk Firmware for Toshiba PM4 RI</DisplayName>
+            <Version>AS10</Version>
+            <Build></Build>
+            <File>bundles/SAS-Drive_Firmware_1DJXX_WN64_AS10_A00.EXE</File>
+            <TargetHardwareInfo>DELL</TargetHardwareInfo>
+            <TargetModelInfo Family="DELL">
+            </TargetModelInfo>
+            <TargetComponentModelInfo>
+                <Model>PX05SRB192Y</Model>
+                <Model>PX05SRB384Y</Model>
+            </TargetComponentModelInfo>
+            <Size>10840696</Size>
+            <UpgradeTime>5</UpgradeTime>
+            <RebootFlag>True</RebootFlag>
+        </Package>
+        <Package InstallOrder="50">
+           <ComponentType>Disk_Firmware</ComponentType>
+           <DisplayName>Disk Firmware for Intel S4510 RI</DisplayName>
+           <Version>DL69</Version>
+           <Build />
+           <File>bundles/Serial-ATA_Firmware_2674V_WN64_DL69_A00.EXE</File>
+           <TargetHardwareInfo>DELL</TargetHardwareInfo>
+           <TargetModelInfo Family="DELL">
+           </TargetModelInfo>
+           <TargetComponentModelInfo>
+               <Model>SSDSC2KB019T8R</Model>
+               <Model>SSDSC2KB038T8R</Model>
+           </TargetComponentModelInfo>
+           <Size>10720968</Size>
+           <UpgradeTime>5</UpgradeTime>
+           <RebootFlag>True</RebootFlag>
+       </Package>
+       <Package InstallOrder="50">
+           <ComponentType>Disk_Firmware</ComponentType>
+           <DisplayName>Disk Firmware for Toshiba PM5 WI</DisplayName>
+           <Version>B026</Version>
+           <Build />
+           <File>bundles/SAS-Drive_Firmware_4P9DW_WN64_B026_A00.EXE</File>
+           <TargetHardwareInfo>DELL</TargetHardwareInfo>
+           <TargetModelInfo Family="DELL">
+           </TargetModelInfo>
+           <TargetComponentModelInfo>
+               <Model>KPM5XMUG400G</Model>
+               <Model>KPM5XMUG800G</Model>
+               <Model>KPM5XMUG1T60</Model>
+           </TargetComponentModelInfo>
+           <Size>10747968</Size>
+           <UpgradeTime>5</UpgradeTime>
+           <RebootFlag>True</RebootFlag>
+        </Package>
+        <Package InstallOrder="50">
+           <ComponentType>Disk_Firmware</ComponentType>
+           <DisplayName>Disk Firmware for Toshiba PM5 RI</DisplayName>
+           <Version>B026</Version>
+           <Build />
+           <File>bundles/SAS-Drive_Firmware_4P9DW_WN64_B026_A00.EXE</File>
+           <TargetHardwareInfo>DELL</TargetHardwareInfo>
+           <TargetModelInfo Family="DELL">
+           </TargetModelInfo>
+           <TargetComponentModelInfo>
+               <Model>KPM5XRUG1T92</Model>
+               <Model>KPM5XRUG3T84</Model>
+           </TargetComponentModelInfo>
+           <Size>10747968</Size>
+           <UpgradeTime>5</UpgradeTime>
+           <RebootFlag>True</RebootFlag>
+        </Package>
+        <Package InstallOrder="50">
+           <ComponentType>Disk_Firmware</ComponentType>
+           <DisplayName>Disk Firmware for Samsung PM883 RI</DisplayName>
+           <Version>HE59</Version>
+           <Build />
+           <File>bundles/Serial-ATA_Firmware_93P7P_WN64_HE59_A00.EXE</File>
+           <TargetHardwareInfo>DELL</TargetHardwareInfo>
+           <TargetModelInfo Family="DELL">
+           </TargetModelInfo>
+           <TargetComponentModelInfo>
+               <Model>MZ7LH1T9HMLT0D3</Model>
+               <Model>MZ7LH3T8HMLT0D3</Model>
+           </TargetComponentModelInfo>
+           <Size>11980200</Size>
+           <UpgradeTime>5</UpgradeTime>
+           <RebootFlag>True</RebootFlag>
+        </Package>
+        <Package InstallOrder="60">
+            <ComponentType>Disk_Firmware</ComponentType>
+            <DisplayName>Disk Firmware for Intel P4610 MU</DisplayName>
+            <Version>VDV1DP25</Version>
+            <Build />
+            <File>bundles/Express-Flash-PCIe-SSD_Firmware_GD4X4_WN64_VDV1DP25_A04.EXE</File>
+            <TargetHardwareInfo>DELL</TargetHardwareInfo>
+            <TargetModelInfo Family="DELL">
+            </TargetModelInfo>
+            <TargetComponentModelInfo>
+                <Model>Dell Express Flash NVMe P4610 1.6TB SFF</Model>
+            </TargetComponentModelInfo>
+            <Size>15357592</Size>
+             <UpgradeTime>5</UpgradeTime>
+            <RebootFlag>True</RebootFlag>
+        </Package>
+        <Package InstallOrder="60">
+            <ComponentType>Disk_Firmware</ComponentType>
+            <DisplayName>Disk Firmware for Intel P4800X WI</DisplayName>
+            <Version>E201DP37</Version>
+            <Build />
+            <File>bundles/Express-Flash-PCIe-SSD_Firmware_RRR52_WN64_E201DP37_A05.EXE</File>
+            <TargetHardwareInfo>DELL</TargetHardwareInfo>
+            <TargetModelInfo Family="DELL">
+            </TargetModelInfo>
+            <TargetComponentModelInfo>
+                <Model>Dell Express Flash NVMe P4800X 375GB SFF</Model>
+            </TargetComponentModelInfo>
+            <Size>14951320</Size>
+             <UpgradeTime>5</UpgradeTime>
+            <RebootFlag>True</RebootFlag>
+        </Package>
+        <Package InstallOrder="60">
+            <ComponentType>Disk_Firmware</ComponentType>
+            <DisplayName>Disk Firmware for Samsung PM1725b MU</DisplayName>
+            <Version>1.2.2</Version>
+            <Build />
+            <File>bundles/Express-Flash-PCIe-SSD_Firmware_3F3N1_WN64_1.2.2_A04.EXE</File>
+            <TargetHardwareInfo>DELL</TargetHardwareInfo>
+            <TargetModelInfo Family="DELL">
+            </TargetModelInfo>
+            <TargetComponentModelInfo>
+                <Model>Dell Express Flash PM1725b 1.6TB SFF</Model>
+            </TargetComponentModelInfo>
+            <Size>17488016</Size>
+             <UpgradeTime>5</UpgradeTime>
+            <RebootFlag>True</RebootFlag>
+        </Package>
+        <Package InstallOrder="50">
+            <ComponentType>Disk_Firmware</ComponentType>
+            <DisplayName>Disk Firmware for Samsung PM1645 MU</DisplayName>
+            <Version>DWF8</Version>
+            <Build />
+            <File>bundles/SAS-Drive_Firmware_C9JP2_WN64_DWF8_A00.EXE</File>
+            <TargetHardwareInfo>DELL</TargetHardwareInfo>
+            <TargetModelInfo Family="DELL">
+            </TargetModelInfo>
+            <TargetComponentModelInfo>
+                <Model>MZILT800HAHQ0D3</Model>
+                <Model>MZILT1T6HAJQ0D3</Model>
+            </TargetComponentModelInfo>
+            <Size>10636000</Size>
+             <UpgradeTime>5</UpgradeTime>
+            <RebootFlag>True</RebootFlag>
+        </Package>
+        <Package InstallOrder="50">
+            <ComponentType>Disk_Firmware</ComponentType>
+            <DisplayName>Disk Firmware for Micron 5200 RI</DisplayName>
+            <Version>F005</Version>
+            <Build />
+            <File>bundles/Serial-ATA_Firmware_H72VG_WN64_F005_A00.EXE</File>
+            <TargetHardwareInfo>DELL</TargetHardwareInfo>
+            <TargetModelInfo Family="DELL">
+            </TargetModelInfo>
+            <TargetComponentModelInfo>
+                <Model>MTFDDAK1T9TDD</Model>
+            </TargetComponentModelInfo>
+            <Size>10654832</Size>
+             <UpgradeTime>5</UpgradeTime>
+            <RebootFlag>True</RebootFlag>
+        </Package>
+        <Package InstallOrder="60">
+            <ComponentType>Disk_Firmware</ComponentType>
+            <DisplayName>Disk Firmware for Intel P4510 RI</DisplayName>
+            <Version>VDV1DP25</Version>
+            <Build />
+            <File>bundles/Express-Flash-PCIe-SSD_Firmware_GD4X4_WN64_VDV1DP25_A04.EXE</File>
+            <TargetHardwareInfo>DELL</TargetHardwareInfo>
+            <TargetModelInfo Family="DELL">
+            </TargetModelInfo>
+            <TargetComponentModelInfo>
+                <Model>Dell Express Flash NVMe P4510 1TB SFF</Model>
+                <Model>Dell Express Flash NVMe P4510 4TB SFF</Model>
+            </TargetComponentModelInfo>
+            <Size>15357592</Size>
+            <UpgradeTime>5</UpgradeTime>
+            <RebootFlag>True</RebootFlag>
+        </Package>
+        <Package InstallOrder="60">
+            <ComponentType>Disk_Firmware</ComponentType>
+            <DisplayName>Disk Firmware for Toshiba CD5 RI</DisplayName>
+            <Version>1.2.0</Version>
+            <Build />
+            <File>bundles/Express-Flash-PCIe-SSD_Firmware_T79D5_WN64_1.2.0_A04.EXE</File>
+            <TargetHardwareInfo>DELL</TargetHardwareInfo>
+            <TargetModelInfo Family="DELL">
+            </TargetModelInfo>
+            <TargetComponentModelInfo>
+                <Model>Dell Express Flash CD5 960G SFF</Model>
+                <Model>Dell Express Flash CD5 3.84T SFF</Model>
+            </TargetComponentModelInfo>
+            <Size>15579888</Size>
+            <UpgradeTime>5</UpgradeTime>
+            <RebootFlag>True</RebootFlag>
+        </Package>
+        <Package InstallOrder="56">
+            <ComponentType>M2_SATA_Firmware</ComponentType>
+            <DisplayName>Disk Firmware for Micron M.2</DisplayName>
+            <Version>E013</Version>
+            <Build />
+            <File>bundles/Serial-ATA_Firmware_YM8KY_WN64_E013_A00.EXE</File>
+            <TargetHardwareInfo>DELL</TargetHardwareInfo>
+            <TargetModelInfo Family="DELL">
+            </TargetModelInfo>
+            <TargetComponentModelInfo>
+                <Model>MTFDDAV240TCB</Model>
+                <Model>MTFDDAV480TCB</Model>
+            </TargetComponentModelInfo>
+            <Size>10603784</Size>
+            <UpgradeTime>5</UpgradeTime>
+            <RebootFlag>True</RebootFlag>
+        </Package>
+        <Package InstallOrder="56">
+            <ComponentType>M2_SATA_Firmware</ComponentType>
+            <DisplayName>Disk Firmware for S4510 M.2</DisplayName>
+            <Version>DL6R</Version>
+            <Build />
+            <File>bundles/Serial-ATA_Firmware_Y1P10_WN64_DL6R_A00.EXE</File>
+            <TargetHardwareInfo>DELL</TargetHardwareInfo>
+            <TargetModelInfo Family="DELL">
+            </TargetModelInfo>
+            <TargetComponentModelInfo>
+                <Model>SSDSCKKB240G8R</Model>
+                <Model>SSDSCKKB480G8R</Model>
+            </TargetComponentModelInfo>
+            <Size>10606256</Size>
+            <UpgradeTime>5</UpgradeTime>
+            <RebootFlag>True</RebootFlag>
+        </Package>
+        <Package InstallOrder="80">
+            <ComponentType>Backplane_Firmware</ComponentType>
+            <DisplayName>Expander Backplane Firmware for 14G</DisplayName>
+            <Version>2.52</Version>
+            <Build></Build>
+            <File>bundles/Firmware_60K1J_WN64_2.52_A00.EXE</File>
+            <TargetHardwareInfo>DELL</TargetHardwareInfo>
+            <TargetModelInfo Family="DELL">
+                <Model Alias="Dell EMC VxRail E560F">VxRail E560F</Model>
+                <Model Alias="Dell EMC VxRail E560">VxRail E560</Model>
+                <Model Alias="Dell EMC VxRail V570F">VxRail V570F</Model>
+                <Model Alias="Dell EMC VxRail V570">VxRail V570</Model>
+                <Model Alias="Dell EMC VxRail P570F">VxRail P570F</Model>
+                <Model Alias="Dell EMC VxRail P570">VxRail P570</Model>
+                <Model Alias="Dell EMC VxRail S570">VxRail S570</Model>
+                <Model Alias="Dell EMC VxRail P575">VxRail P575</Model>
+                <Model Alias="Dell EMC VxRail P575F">VxRail P575F</Model>
+                <Model Alias="Dell EMC VxRail E560N">VxRail E560N</Model>
+                <Model Alias="Dell EMC VxRail P675F">VxRail P675F</Model>
+            </TargetModelInfo>
+            <TargetComponentModelInfo>
+                <Model>expander</Model>
+            </TargetComponentModelInfo>
+            <Size>7151080</Size>
+            <UpgradeTime>5</UpgradeTime>
+            <RebootFlag>True</RebootFlag>
+        </Package>
+        <Package InstallOrder="80">
+            <ComponentType>Backplane_Firmware</ComponentType>
+            <DisplayName>Non-Expander Backplane Firmware for 14G R Series</DisplayName>
+            <Version>4.35</Version>
+            <Build></Build>
+            <File>bundles/Firmware_VV85D_WN64_4.35_A00_03.EXE</File>
+            <TargetHardwareInfo>DELL</TargetHardwareInfo>
+            <TargetModelInfo Family="DELL">
+                <Model Alias="Dell EMC VxRail S570">VxRail S570</Model>
+                <Model Alias="Dell EMC VxRail E565">VxRail E565</Model>
+                <Model Alias="Dell EMC VxRail E565F">VxRail E565F</Model>
+                <Model Alias="Dell EMC VxRail P575N">VxRail P575N</Model>
+                <Model Alias="Dell EMC VxRail P580N">VxRail P580N</Model>
+                <Model Alias="Dell EMC VxRail D560">VxRail D560</Model>
+                <Model Alias="Dell EMC VxRail D560F">VxRail D560F</Model>
+                <Model Alias="Dell EMC VxRail E665">VxRail E665</Model>
+                <Model Alias="Dell EMC VxRail E665F">VxRail E665F</Model>
+                <Model Alias="Dell EMC VxRail E665N">VxRail E665N</Model>
+                <Model Alias="Dell EMC VxRail P675N">VxRail P675N</Model>
+            </TargetModelInfo>
+            <TargetComponentModelInfo>
+                <Model>non-expander</Model>
+            </TargetComponentModelInfo>
+            <Size>7865232</Size>
+            <UpgradeTime>5</UpgradeTime>
+            <RebootFlag>True</RebootFlag>
+        </Package>
+
+        <Package InstallOrder="80">
+            <ComponentType>Backplane_Firmware</ComponentType>
+            <DisplayName>Expander Backplane for 15G</DisplayName>
+            <Version>1.17</Version>
+            <Build></Build>
+            <File>bundles/Firmware_GKRX8_WN64_1.17_A00.EXE</File>
+            <TargetHardwareInfo>DELL</TargetHardwareInfo>
+            <TargetModelInfo Family="DELL">
+                <Model Alias="Dell EMC VxRail P670F">VxRail P670F</Model>
+                <Model Alias="Dell EMC VxRail V670F">VxRail V670F</Model>
+            </TargetModelInfo>
+            <TargetComponentModelInfo>
+                <Model>expander</Model>
+            </TargetComponentModelInfo>
+            <Size>7255688</Size>
+            <UpgradeTime>5</UpgradeTime>
+            <RebootFlag>True</RebootFlag>
+        </Package>
+        <Package InstallOrder="80">
+            <ComponentType>Backplane_Firmware</ComponentType>
+            <DisplayName>Non-Expander Backplane for 15G</DisplayName>
+            <Version>3.56</Version>
+            <Build></Build>
+            <File>bundles/Firmware_GWM34_WN64_3.56_A00.EXE</File>
+            <TargetHardwareInfo>DELL</TargetHardwareInfo>
+            <TargetModelInfo Family="DELL">
+                <Model Alias="Dell EMC VxRail E660">VxRail E660</Model>
+                <Model Alias="Dell EMC VxRail E660F">VxRail E660F</Model>
+                <Model Alias="Dell EMC VxRail P670F">VxRail P670F</Model>
+                <Model Alias="Dell EMC VxRail S670">VxRail S670</Model>
+                <Model Alias="Dell EMC VxRail E660N">VxRail E660N</Model>
+                <Model Alias="Dell EMC VxRail P670N">VxRail P670N</Model>
+            </TargetModelInfo>
+            <TargetComponentModelInfo>
+                <Model>non-expander</Model>
+            </TargetComponentModelInfo>
+            <Size>7919792</Size>
+            <UpgradeTime>5</UpgradeTime>
+            <RebootFlag>True</RebootFlag>
+        </Package>
+        <Package InstallOrder="55">
+            <ComponentType>BOSS_Firmware</ComponentType>
+            <DisplayName>BOSS Firmware</DisplayName>
+            <Version>2.5.13.3024</Version>
+            <Build></Build>
+            <File>bundles/SAS-RAID_Firmware_3P39V_WN64_2.5.13.3024_A07_01.EXE</File>
+            <TargetHardwareInfo>DELL</TargetHardwareInfo>
+            <TargetModelInfo Family="DELL">
+            </TargetModelInfo>
+            <TargetComponentModelInfo>
+                <Model>boss-s1</Model>
+            </TargetComponentModelInfo>
+            <Size>6243160</Size>
+            <UpgradeTime>5</UpgradeTime>
+            <RebootFlag>True</RebootFlag>
+        </Package>
+        <Package InstallOrder="55">
+            <ComponentType>BOSS_Firmware</ComponentType>
+            <DisplayName>BOSS_S2 for 15G</DisplayName>
+            <Version>2.5.13.4008</Version>
+            <Build></Build>
+            <File>bundles/SAS-RAID_Firmware_MVC3P_WN64_2.5.13.4008_A00.EXE</File>
+            <TargetHardwareInfo>DELL</TargetHardwareInfo>
+            <TargetModelInfo Family="DELL">
+            </TargetModelInfo>
+            <TargetComponentModelInfo>
+                <Model>boss-s2</Model>
+            </TargetComponentModelInfo>
+            <Size>5769136</Size>
+            <UpgradeTime>5</UpgradeTime>
+            <RebootFlag>True</RebootFlag>
+        </Package>
+        <Package InstallOrder="56">
+            <ComponentType>M2_SATA_Firmware</ComponentType>
+            <DisplayName>M.2 for 14G and C6420</DisplayName>
+            <Version>DL43</Version>
+            <Build></Build>
+            <File>bundles/Serial-ATA_Firmware_CHJGV_WN64_DL43_A00_01.EXE</File>
+            <TargetHardwareInfo>DELL</TargetHardwareInfo>
+            <TargetModelInfo Family="DELL">
+            </TargetModelInfo>
+            <TargetComponentModelInfo>
+                <Model>SSDSCKJB240G7R</Model>
+                <Model>SSDSCKJB120G7R</Model>
+            </TargetComponentModelInfo>
+            <Size>10183056</Size>
+            <UpgradeTime>5</UpgradeTime>
+            <RebootFlag>True</RebootFlag>
+        </Package>
+        <Package InstallOrder="56">
+            <ComponentType>M2_SATA_Firmware</ComponentType>
+            <DisplayName>Micron M.2 SSD Firmware for 5300 Series</DisplayName>
+            <Version>J004</Version>
+            <Build></Build>
+            <File>bundles/Serial-ATA_Firmware_X5R54_WN64_J004_A00.EXE</File>
+            <TargetHardwareInfo>DELL</TargetHardwareInfo>
+            <TargetModelInfo Family="DELL">
+            </TargetModelInfo>
+            <TargetComponentModelInfo>
+                <Model>MTFDDAV480TDS</Model>
+                <Model>MTFDDAV240TDU</Model>
+            </TargetComponentModelInfo>
+            <Size>10689568</Size>
+            <UpgradeTime>5</UpgradeTime>
+            <RebootFlag>True</RebootFlag>
+        </Package>
+        <Package InstallOrder="81">
+            <ComponentType>IDSDM_Firmware</ComponentType>
+            <DisplayName>IDSDM for 14G</DisplayName>
+            <Version>1.13</Version>
+            <Build />
+            <File>bundles/Firmware_2NPVN_WN64_1.13_A04_01.EXE</File>
+            <TargetHardwareInfo>DELL</TargetHardwareInfo>
+            <TargetModelInfo Family="DELL">
+                <Model Alias="Dell EMC VxRail E560F">VxRail E560F</Model>
+                <Model Alias="Dell EMC VxRail E560">VxRail E560</Model>
+                <Model Alias="Dell EMC VxRail V570F">VxRail V570F</Model>
+                <Model Alias="Dell EMC VxRail V570">VxRail V570</Model>
+                <Model Alias="Dell EMC VxRail P570F">VxRail P570F</Model>
+                <Model Alias="Dell EMC VxRail P570">VxRail P570</Model>
+                <Model Alias="Dell EMC VxRail S570">VxRail S570</Model>
+                <Model Alias="Dell EMC VxRail E560N">VxRail E560N</Model>
+                <Model Alias="Dell EMC VxRail P580N">VxRail P580N</Model>
+            </TargetModelInfo>
+            <TargetComponentModelInfo>
+                <Model>103710</Model>
+            </TargetComponentModelInfo>
+            <Size>5111640</Size>
+            <UpgradeTime>5</UpgradeTime>
+            <RebootFlag>True</RebootFlag>
+        </Package>
+        <Package InstallOrder="40">
+            <ComponentType>NIC_Firmware</ComponentType>
+            <DisplayName>NIC Firmware for bcm572X</DisplayName>
+            <Version>21.81.3</Version>
+            <Build></Build>
+            <SystemName>nic-fw-bcm572X</SystemName>
+            <File>bundles/Network_Firmware_4JVHJ_WN64_21.81.3.EXE</File>
+            <TargetHardwareInfo>DELL</TargetHardwareInfo>
+            <TargetModelInfo Family="DELL">
+            </TargetModelInfo>
+            <TargetNicModelInfo>
+                <Model>bcm5720</Model>
+            </TargetNicModelInfo>
+            <Size>6823240</Size>
+            <UpgradeTime>5</UpgradeTime>
+            <RebootFlag>True</RebootFlag>
+    </Package>
+    <Package InstallOrder="40">
+        <ComponentType>NIC_Firmware</ComponentType>
+        <DisplayName>Intel NIC Firmware for E810</DisplayName>
+        <Version>20.5.13</Version>
+        <Build></Build>
+        <File>bundles/Network_Firmware_NVXX9_WN64_20.5.13_A00.EXE</File>
+        <TargetHardwareInfo>DELL</TargetHardwareInfo>
+        <TargetModelInfo Family="DELL">
+        </TargetModelInfo>
+        <TargetNicModelInfo>
+            <Model>8086.159B</Model>
+        </TargetNicModelInfo>
+        <Size>25789880</Size>
+        <UpgradeTime>5</UpgradeTime>
+        <RebootFlag>True</RebootFlag>
+    </Package>
+    	<Package InstallOrder="82">
+            <ComponentType>PSU_Firmware</ComponentType>
+            <DisplayName>Artesyn 2000W PSU Firmware</DisplayName>
+            <Version>00.32.75</Version>
+            <Build></Build>
+            <File>bundles/Power_Firmware_M7GNF_WN64_00.32.75.EXE</File>
+            <TargetHardwareInfo>DELL</TargetHardwareInfo>
+            <TargetModelInfo Family="DELL">
+            </TargetModelInfo>
+            <TargetComponentModelInfo>
+                <Model>W1R7V</Model>
+            </TargetComponentModelInfo>
+            <Size>7460464</Size>
+            <UpgradeTime>5</UpgradeTime>
+            <RebootFlag>True</RebootFlag>
+        </Package>
+	<Package InstallOrder="82">
+            <ComponentType>PSU_Firmware</ComponentType>
+            <DisplayName>Emerson 1100W 48VDC PSU Firmware</DisplayName>
+            <Version>04.08.26</Version>
+            <Build></Build>
+            <File>bundles/Power_Firmware_J2HV9_WN64_04.10.26_01.EXE</File>
+            <TargetHardwareInfo>DELL</TargetHardwareInfo>
+            <TargetModelInfo Family="DELL">
+            </TargetModelInfo>
+            <TargetComponentModelInfo>
+                <Model>5G4WK</Model>
+            </TargetComponentModelInfo>
+            <Size>8112344</Size>
+            <UpgradeTime>5</UpgradeTime>
+            <RebootFlag>True</RebootFlag>
+        </Package>
+        <Package InstallOrder="50">
+            <ComponentType>Disk_Firmware</ComponentType>
+            <DisplayName>Western Digital SSD Firmware for BC Quantum Series</DisplayName>
+            <Version>G130</Version>
+            <Build></Build>
+            <File>bundles/SAS-Drive_Firmware_X95FJ_WN64_G130_A00.EXE</File>
+            <TargetHardwareInfo>DELL</TargetHardwareInfo>
+            <TargetModelInfo Family="DELL">
+            </TargetModelInfo>
+            <TargetComponentModelInfo>
+                <Model>WUSTR6480BSS200</Model>
+                <Model>WUSTR6416BSS200</Model>
+                <Model>WUSTVA176BSS200</Model>
+                <Model>WUSTVA119BSS200</Model>
+                <Model>WUSTVA138BSS200</Model>
+                <Model>WUSTM3240BSS200</Model>
+                <Model>WUSTM3280BSS200</Model>
+            </TargetComponentModelInfo>
+            <Size>10687312</Size>
+            <UpgradeTime>5</UpgradeTime>
+            <RebootFlag>True</RebootFlag>
+        </Package>
+        <Package InstallOrder="50">
+            <ComponentType>Disk_Firmware</ComponentType>
+            <DisplayName>Seagate SSD Firmware for Lange Series</DisplayName>
+            <Version>EC16</Version>
+            <Build></Build>
+            <File>bundles/SAS-Drive_Firmware_H3VHX_WN64_EC16_A00.EXE</File>
+            <TargetHardwareInfo>DELL</TargetHardwareInfo>
+            <TargetModelInfo Family="DELL">
+            </TargetModelInfo>
+            <TargetComponentModelInfo>
+                <Model>XS7680SE70074</Model>
+            </TargetComponentModelInfo>
+            <Size>10683112</Size>
+            <UpgradeTime>5</UpgradeTime>
+            <RebootFlag>True</RebootFlag>
+        </Package>
+        <Package InstallOrder="50">
+            <ComponentType>Disk_Firmware</ComponentType>
+            <DisplayName>KIOXIA SSD Firmware for PM6 Series</DisplayName>
+            <Version>BA08</Version>
+            <Build></Build>
+            <File>bundles/SAS-Drive_Firmware_5D5VX_WN64_BA08_A00.EXE</File>
+            <TargetHardwareInfo>DELL</TargetHardwareInfo>
+            <TargetModelInfo Family="DELL">
+            </TargetModelInfo>
+            <TargetComponentModelInfo>
+                <Model>KPM6XMUG800G</Model>
+                <Model>KPM6XMUG400G</Model>
+                <Model>KPM6XVUG800G</Model>
+                <Model>KPM6XVUG1T60</Model>
+                <Model>KPM6XRUG1T92</Model>
+                <Model>KPM6XRUG3T84</Model>
+                <Model>KPM6XRUG7T68</Model>
+            </TargetComponentModelInfo>
+            <Size>11022696</Size>
+            <UpgradeTime>5</UpgradeTime>
+            <RebootFlag>True</RebootFlag>
+        </Package>
+        <Package InstallOrder="50">
+            <ComponentType>Disk_Firmware</ComponentType>
+            <DisplayName>KIOXIA SSD Firmware for PM6 FIPS Series</DisplayName>
+            <Version>BD08</Version>
+            <Build></Build>
+            <File>bundles/SAS-Drive_Firmware_9GX1D_WN64_BD08_A00.EXE</File>
+            <TargetHardwareInfo>DELL</TargetHardwareInfo>
+            <TargetModelInfo Family="DELL">
+            </TargetModelInfo>
+            <TargetComponentModelInfo>
+                <Model>KPM6WVUG960G</Model>
+                <Model>KPM6WRUG1T92</Model>
+                <Model>KPM6WRUG3T84</Model>
+            </TargetComponentModelInfo>
+            <Size>11111304</Size>
+            <UpgradeTime>5</UpgradeTime>
+            <RebootFlag>True</RebootFlag>
+        </Package>
+        <Package InstallOrder="50">
+            <ComponentType>Disk_Firmware</ComponentType>
+            <DisplayName>KIOXIA SSD Firmware for RM6 Series</DisplayName>
+            <Version>BJ02</Version>
+            <Build></Build>
+            <File>bundles/SAS-Drive_Firmware_3P4FR_WN64_BJ02_A00.EXE</File>
+            <TargetHardwareInfo>DELL</TargetHardwareInfo>
+            <TargetModelInfo Family="DELL">
+            </TargetModelInfo>
+            <TargetComponentModelInfo>
+                <Model>KRM6VRUG1T92</Model>
+                <Model>KRM6VRUG3T84</Model>
+                <Model>KRM6VRUG7T68</Model>
+                <Model>KRM6VVUG1T92</Model>
+                <Model>KRM6VVUG3T84</Model>
+            </TargetComponentModelInfo>
+            <Size>10781560</Size>
+            <UpgradeTime>5</UpgradeTime>
+            <RebootFlag>True</RebootFlag>
+        </Package>
+        <Package InstallOrder="50">
+            <ComponentType>Disk_Firmware</ComponentType>
+            <DisplayName>KIOXIA HDD Firmware for MG08SD Series</DisplayName>
+            <Version>EK04</Version>
+            <Build></Build>
+            <File>bundles/SAS-Drive_Firmware_YJKH7_WN64_EK04_A00.EXE</File>
+            <TargetHardwareInfo>DELL</TargetHardwareInfo>
+            <TargetModelInfo Family="DELL">
+            </TargetModelInfo>
+            <TargetComponentModelInfo>
+                <Model>MG08SDA400NY</Model>
+            </TargetComponentModelInfo>
+            <Size>10861808</Size>
+            <UpgradeTime>5</UpgradeTime>
+            <RebootFlag>True</RebootFlag>
+        </Package>
+        <Package InstallOrder="50">
+            <ComponentType>Disk_Firmware</ComponentType>
+            <DisplayName>KIOXIA SSD Firmware for RM5 Series</DisplayName>
+            <Version>B70C</Version>
+            <Build></Build>
+            <File>bundles/SAS-Drive_Firmware_12D7W_WN64_B70C_A00.EXE</File>
+            <TargetHardwareInfo>DELL</TargetHardwareInfo>
+            <TargetModelInfo Family="DELL">
+            </TargetModelInfo>
+            <TargetComponentModelInfo>
+                <Model>KRM5XVUG1T92</Model>
+                <Model>KRM5XRUG1T92</Model>
+                <Model>KRM5XVUG3T84</Model>
+                <Model>KRM5XRUG7T68</Model>
+            </TargetComponentModelInfo>
+            <Size>10775344</Size>
+            <UpgradeTime>5</UpgradeTime>
+            <RebootFlag>True</RebootFlag>
+        </Package>
+        <Package InstallOrder="50">
+            <ComponentType>Disk_Firmware</ComponentType>
+            <DisplayName>SKHynix SSD Firmware for SE5110 Series</DisplayName>
+            <Version>DZ00</Version>
+            <Build></Build>
+            <File>bundles/Serial-ATA_Firmware_P96R1_WN64_DZ00_A00.EXE</File>
+            <TargetHardwareInfo>DELL</TargetHardwareInfo>
+            <TargetModelInfo Family="DELL">
+            </TargetModelInfo>
+            <TargetComponentModelInfo>
+                <Model>HFS1T9G3H2X069N</Model>
+                <Model>HFS3T8G3H2X069N</Model>
+            </TargetComponentModelInfo>
+            <Size>15430824</Size>
+            <UpgradeTime>5</UpgradeTime>
+            <RebootFlag>True</RebootFlag>
+        </Package>
+        <Package InstallOrder="60">
+            <ComponentType>Disk_Firmware</ComponentType>
+            <DisplayName>Samsung SSD Firmware for PM173x v2 Series</DisplayName>
+            <Version>2.0.0</Version>
+            <Build></Build>
+            <File>bundles/Express-Flash-PCIe-SSD_Firmware_DPPKV_WN64_2.0.0_A00.EXE</File>
+            <TargetHardwareInfo>DELL</TargetHardwareInfo>
+            <TargetModelInfo Family="DELL">
+            </TargetModelInfo>
+            <TargetComponentModelInfo>
+                <Model>Dell Ent NVMe v2 AGN MU U.2 1.6TB</Model>
+                <Model>Dell Ent NVMe v2 AGN RI U.2 1.92TB</Model>
+                <Model>Dell Ent NVMe v2 AGN RI U.2 3.84TB</Model>
+                <Model>Dell Ent NVMe v2 AGN RI U.2 7.68TB</Model>
+            </TargetComponentModelInfo>
+            <Size>19858864</Size>
+            <UpgradeTime>5</UpgradeTime>
+            <RebootFlag>True</RebootFlag>
+        </Package>
+        <Package InstallOrder="60">
+            <ComponentType>Disk_Firmware</ComponentType>
+            <DisplayName>Samsung SSD Firmware for PM173x Series</DisplayName>
+            <Version>2.3.0</Version>
+            <Build></Build>
+            <File>bundles/Express-Flash-PCIe-SSD_Firmware_RP8RC_WN64_2.3.0_A03.EXE</File>
+            <TargetHardwareInfo>DELL</TargetHardwareInfo>
+            <TargetModelInfo Family="DELL">
+            </TargetModelInfo>
+            <TargetComponentModelInfo>
+                <Model>Dell Ent NVMe AGN MU U.2 1.6TB</Model>
+                <Model>Dell Ent NVMe AGN RI U.2 1.92TB</Model>
+                <Model>Dell Ent NVMe AGN RI U.2 3.84TB</Model>
+                <Model>Dell Ent NVMe AGN RI U.2 7.68TB</Model>
+            </TargetComponentModelInfo>
+            <Size>19800856</Size>
+             <UpgradeTime>5</UpgradeTime>
+            <RebootFlag>True</RebootFlag>
+        </Package>
+        <Package InstallOrder="50">
+            <ComponentType>Disk_Firmware</ComponentType>
+            <DisplayName>Samsung SSD Firmware for PM883a Series</DisplayName>
+            <Version>HG58</Version>
+            <Build></Build>
+            <File>bundles/Serial-ATA_Firmware_882YH_WN64_HG58_A00.EXE</File>
+            <TargetHardwareInfo>DELL</TargetHardwareInfo>
+            <TargetModelInfo Family="DELL">
+            </TargetModelInfo>
+            <TargetComponentModelInfo>
+                <Model>MZ7LH1T9HALT0D3</Model>
+                <Model>MZ7LH3T8HALT0D3</Model>
+                <Model>MZ7LH3T8HALTAD3</Model>
+            </TargetComponentModelInfo>
+            <Size>12002672</Size>
+            <UpgradeTime>5</UpgradeTime>
+            <RebootFlag>True</RebootFlag>
+        </Package>
+        <Package InstallOrder="50">
+            <ComponentType>Disk_Firmware</ComponentType>
+            <DisplayName>SKHynix SSD Firmware for SE4011 Series</DisplayName>
+            <Version>DE07</Version>
+            <Build></Build>
+            <File>bundles/Serial-ATA_Firmware_MFCH2_WN64_DE07_A00.EXE</File>
+            <TargetHardwareInfo>DELL</TargetHardwareInfo>
+            <TargetModelInfo Family="DELL">
+            </TargetModelInfo>
+            <TargetComponentModelInfo>
+                <Model>HFS1T9G32FEH-7A10A</Model>
+                <Model>HFS3T8G32FEH-7410A</Model>
+            </TargetComponentModelInfo>
+            <Size>12015048</Size>
+             <UpgradeTime>5</UpgradeTime>
+            <RebootFlag>True</RebootFlag>
+        </Package>
+        <Package InstallOrder="50">
+            <ComponentType>Disk_Firmware</ComponentType>
+            <DisplayName>Micron SSD Firmware for 5300 Series</DisplayName>
+            <Version>J004</Version>
+            <Build></Build>
+            <File>bundles/Serial-ATA_Firmware_X5R54_WN64_J004_A00.EXE</File>
+            <TargetHardwareInfo>DELL</TargetHardwareInfo>
+            <TargetModelInfo Family="DELL">
+            </TargetModelInfo>
+            <TargetComponentModelInfo>
+                <Model>MTFDDAK1T9TDS</Model>
+            </TargetComponentModelInfo>
+            <Size>10689568</Size>
+             <UpgradeTime>5</UpgradeTime>
+            <RebootFlag>True</RebootFlag>
+        </Package>
+        <Package InstallOrder="50">
+            <ComponentType>Disk_Firmware</ComponentType>
+            <DisplayName>Micron SSD Firmware for 5300 MTFDDAK3T8TDx</DisplayName>
+            <Version>J404</Version>
+            <Build></Build>
+            <File>bundles/Serial-ATA_Firmware_PXMD3_WN64_J404_A00.EXE</File>
+            <TargetHardwareInfo>DELL</TargetHardwareInfo>
+            <TargetModelInfo Family="DELL">
+            </TargetModelInfo>
+            <TargetComponentModelInfo>
+                <Model>MTFDDAK3T8TDT</Model>
+            </TargetComponentModelInfo>
+            <Size>10671976</Size>
+             <UpgradeTime>5</UpgradeTime>
+            <RebootFlag>True</RebootFlag>
+       </Package>
+       <Package InstallOrder="83">
+            <ComponentType>DCPM_Firmware</ComponentType>
+            <DisplayName>Intel Optane DC Persistent Memory Firmware</DisplayName>
+            <Version>01.02.00.5446</Version>
+            <Build></Build>
+            <File>bundles/Memory_Firmware_498KF_WN64_01.02.00.5446_A00.EXE</File>
+            <TargetHardwareInfo>DELL</TargetHardwareInfo>
+            <TargetModelInfo Family="DELL">
+            </TargetModelInfo>
+            <TargetComponentModelInfo>
+                <Model>107272</Model>
+            </TargetComponentModelInfo>
+            <Size>5440200</Size>
+            <UpgradeTime>5</UpgradeTime>
+            <RebootFlag>True</RebootFlag>
+        </Package>
+        <Package InstallOrder="83">
+            <ComponentType>DCPM_Firmware</ComponentType>
+            <DisplayName>Intel Optane Persistent Memory 200 Series Firmware</DisplayName>
+            <Version>02.02.00.1553</Version>
+            <Build></Build>
+            <File>bundles/Memory_Firmware_746CF_WN64_02.02.00.1553_A00-00.EXE</File>
+            <TargetHardwareInfo>DELL</TargetHardwareInfo>
+            <TargetModelInfo Family="DELL">
+            </TargetModelInfo>
+            <TargetComponentModelInfo>
+                <Model>108777</Model>
+            </TargetComponentModelInfo>
+            <Size>5431064</Size>
+            <UpgradeTime>5</UpgradeTime>
+            <RebootFlag>True</RebootFlag>
+        </Package>
+        <Package InstallOrder="50">
+            <ComponentType>Disk_Firmware</ComponentType>
+            <DisplayName>Toshiba HDD Firmware for AL15SE Series</DisplayName>
+            <Version>EF06</Version>
+            <Build></Build>
+            <File>bundles/SAS-Drive_Firmware_0T1RG_WN64_EF06_A00.EXE</File>
+            <TargetHardwareInfo>DELL</TargetHardwareInfo>
+            <TargetModelInfo Family="DELL">
+            </TargetModelInfo>
+            <TargetComponentModelInfo>
+                <Model>AL15SEB24EQY</Model>
+                <Model>AL15SEB18EQY</Model>
+            </TargetComponentModelInfo>
+            <Size>10604248</Size>
+            <UpgradeTime>5</UpgradeTime>
+            <RebootFlag>True</RebootFlag>
+        </Package>
+        <Package InstallOrder="50">
+            <ComponentType>Disk_Firmware</ComponentType>
+            <DisplayName>HGST HDD Firmware for Vela-A Series</DisplayName>
+            <Version>PU04</Version>
+            <Build></Build>
+            <File>bundles/SAS-Drive_Firmware_RGRYN_WN64_PU04_A00.EXE</File>
+            <TargetHardwareInfo>DELL</TargetHardwareInfo>
+            <TargetModelInfo Family="DELL">
+            </TargetModelInfo>
+            <TargetComponentModelInfo>
+                <Model>HUS726T4TALS200</Model>
+            </TargetComponentModelInfo>
+            <Size>11463072</Size>
+            <UpgradeTime>5</UpgradeTime>
+            <RebootFlag>True</RebootFlag>
+        </Package>
+        <Package InstallOrder="50">
+            <ComponentType>Disk_Firmware</ComponentType>
+            <DisplayName>Toshiba HDD Frimware for MG06 Series</DisplayName>
+            <Version>EH0C</Version>
+            <Build>EH0C</Build>
+            <File>bundles/SAS-Drive_Firmware_4FJP1_WN64_EH0C_A00.EXE</File>
+            <TargetHardwareInfo>DELL</TargetHardwareInfo>
+            <TargetModelInfo Family="DELL">
+            </TargetModelInfo>
+            <TargetComponentModelInfo>
+                <Model>MG06SCA800EY</Model>
+            </TargetComponentModelInfo>
+            <Size>10794576</Size>
+            <UpgradeTime>5</UpgradeTime>
+            <RebootFlag>True</RebootFlag>
+        </Package>
+        <Package InstallOrder="50">
+            <ComponentType>Disk_Firmware</ComponentType>
+            <DisplayName>HGST HDD Firmware for Vela AP Series</DisplayName>
+            <Version>RS05</Version>
+            <Build></Build>
+            <File>bundles/SAS-Drive_Firmware_XG8RF_WN64_RS05_A00.EXE</File>
+            <TargetHardwareInfo>DELL</TargetHardwareInfo>
+            <TargetModelInfo Family="DELL">
+            </TargetModelInfo>
+            <TargetComponentModelInfo>
+                <Model>HUS728T8TAL5200</Model>
+            </TargetComponentModelInfo>
+            <Size>11344416</Size>
+            <UpgradeTime>5</UpgradeTime>
+            <RebootFlag>True</RebootFlag>
+        </Package>
+        <Package InstallOrder="50">
+            <ComponentType>Disk_Firmware</ComponentType>
+            <DisplayName>Toshiba HDD Firmware for Tomcat-R Series</DisplayName>
+            <Version>EG03</Version>
+            <Build></Build>
+            <File>bundles/SAS-Drive_Firmware_D2GG1_WN64_EG03_A00.EXE</File>
+            <TargetHardwareInfo>DELL</TargetHardwareInfo>
+            <TargetModelInfo Family="DELL">
+            </TargetModelInfo>
+            <TargetComponentModelInfo>
+                <Model>MG04SCA40ENY</Model>
+            </TargetComponentModelInfo>
+            <Size>16976256</Size>
+            <UpgradeTime>5</UpgradeTime>
+            <RebootFlag>True</RebootFlag>
+        </Package>
+        <Package InstallOrder="50">
+            <ComponentType>Disk_Firmware</ComponentType>
+            <DisplayName>Seagate HDD Firmware for Cimarron 512N Series</DisplayName>
+            <Version>CSJ7</Version>
+            <Build></Build>
+            <File>bundles/SAS-Drive_Firmware_39X9N_WN64_CSJ7_A00.EXE</File>
+            <TargetHardwareInfo>DELL</TargetHardwareInfo>
+            <TargetModelInfo Family="DELL">
+            </TargetModelInfo>
+            <TargetComponentModelInfo>
+                <Model>ST4000NM017A</Model>
+            </TargetComponentModelInfo>
+            <Size>11206168</Size>
+            <UpgradeTime>5</UpgradeTime>
+            <RebootFlag>True</RebootFlag>
+        </Package>
+        <Package InstallOrder="50">
+            <ComponentType>Disk_Firmware</ComponentType>
+            <DisplayName>Seagate HDD Firmware for Cimarron 5xxE Series</DisplayName>
+            <Version>CSL9</Version>
+            <Build></Build>
+            <File>bundles/SAS-Drive_Firmware_K7GFC_WN64_CSL9_A00.EXE</File>
+            <TargetHardwareInfo>DELL</TargetHardwareInfo>
+            <TargetModelInfo Family="DELL">
+            </TargetModelInfo>
+            <TargetComponentModelInfo>
+                <Model>ST8000NM014A</Model>
+            </TargetComponentModelInfo>
+            <Size>11264720</Size>
+            <UpgradeTime>5</UpgradeTime>
+            <RebootFlag>True</RebootFlag>
+        </Package>
+        <Package InstallOrder="50">
+            <ComponentType>Disk_Firmware</ComponentType>
+            <DisplayName>Seagate HDD Firmware for Makara Plus Series</DisplayName>
+            <Version>PT54</Version>
+            <Build></Build>
+            <File>bundles/SAS-Drive_Firmware_XX16D_WN64_PT54_A00.EXE</File>
+            <TargetHardwareInfo>DELL</TargetHardwareInfo>
+            <TargetModelInfo Family="DELL">
+            </TargetModelInfo>
+            <TargetComponentModelInfo>
+                <Model>ST8000NM0185</Model>
+            </TargetComponentModelInfo>
+            <Size>10876704</Size>
+            <UpgradeTime>5</UpgradeTime>
+            <RebootFlag>True</RebootFlag>
+        </Package>
+        <Package InstallOrder="50">
+            <ComponentType>Disk_Firmware</ComponentType>
+            <DisplayName>Samsung SSD Firmware for PM1633a Series</DisplayName>
+            <Version>DSLA</Version>
+            <Build></Build>
+            <File>bundles/SAS-Drive_Firmware_XNGNT_WN64_DSLA_A00.EXE</File>
+            <TargetHardwareInfo>DELL</TargetHardwareInfo>
+            <TargetModelInfo Family="DELL">
+            </TargetModelInfo>
+            <TargetComponentModelInfo>
+                <Model>MZILS3T8HMLH0D3</Model>
+                <Model>MZILS1T9HEJH0D3</Model>
+            </TargetComponentModelInfo>
+            <Size>10574496</Size>
+            <UpgradeTime>5</UpgradeTime>
+            <RebootFlag>True</RebootFlag>
+        </Package>
+        <Package InstallOrder="50">
+            <ComponentType>Disk_Firmware</ComponentType>
+            <DisplayName>Seagate SSD Firmware for Lange BP Series</DisplayName>
+            <Version>4D0B</Version>
+            <Build></Build>
+            <File>bundles/SAS-Drive_Firmware_84K2D_WN64_4D0B_A00.EXE</File>
+            <TargetHardwareInfo>DELL</TargetHardwareInfo>
+            <TargetModelInfo Family="DELL">
+            </TargetModelInfo>
+            <TargetComponentModelInfo>
+                <Model>XS1920SE70154</Model>
+                <Model>XS3840SE70154</Model>
+                <Model>XS7680SE70154</Model>
+                <Model>XS1920LE70154</Model>
+                <Model>XS3840LE70154</Model>
+            </TargetComponentModelInfo>
+            <Size>10767168</Size>
+            <UpgradeTime>5</UpgradeTime>
+            <RebootFlag>True</RebootFlag>
+        </Package>
+        <Package InstallOrder="60">
+            <ComponentType>Disk_Firmware</ComponentType>
+            <DisplayName>KIOXIA SSD Firmware for CM6 Series</DisplayName>
+            <Version>2.1.8</Version>
+            <Build></Build>
+            <File>bundles/Express-Flash-PCIe-SSD_Firmware_H5XX0_WN64_2.1.8_A02.EXE</File>
+            <TargetHardwareInfo>DELL</TargetHardwareInfo>
+            <TargetModelInfo Family="DELL">
+            </TargetModelInfo>
+            <TargetComponentModelInfo>
+                <Model>Dell Ent NVMe CM6 RI 1.92TB</Model>
+                <Model>Dell Ent NVMe CM6 RI 3.84TB</Model>
+                <Model>Dell Ent NVMe CM6 RI 7.68TB</Model>
+                <Model>Dell Ent NVMe CM6 MU 1.6TB</Model>
+            </TargetComponentModelInfo>
+            <Size>16262368</Size>
+            <UpgradeTime>5</UpgradeTime>
+            <RebootFlag>True</RebootFlag>
+        </Package>
+        <Package InstallOrder="65">
+            <ComponentType>DISK_CTLR_Firmware</ComponentType>
+            <DisplayName>Disk Controller for HBA 330 Adapter</DisplayName>
+            <Version>16.17.01.00</Version>
+            <Build></Build>
+            <File>bundles/SAS-Non-RAID_Firmware_NKNVC_WN64_16.17.01.00_A08.EXE</File>
+            <TargetHardwareInfo>DELL</TargetHardwareInfo>
+            <TargetModelInfo Family="DELL">
+            </TargetModelInfo>
+            <TargetComponentModelInfo>
+                <Model>hba330adp</Model>
+            </TargetComponentModelInfo>
+            <Size>7696472</Size>
+            <UpgradeTime>5</UpgradeTime>
+            <RebootFlag>True</RebootFlag>
+        </Package>
+        <Package InstallOrder="65">
+            <ComponentType>DISK_CTLR_Firmware</ComponentType>
+            <DisplayName>Disk Controller for HBA 330 Mini</DisplayName>
+            <Version>16.17.01.00</Version>
+            <Build></Build>
+            <File>bundles/SAS-Non-RAID_Firmware_124X2_WN64_16.17.01.00_A08_02.EXE</File>
+            <TargetHardwareInfo>DELL</TargetHardwareInfo>
+            <TargetModelInfo Family="DELL">
+            </TargetModelInfo>
+            <TargetComponentModelInfo>
+                <Model>hba330mini</Model>
+            </TargetComponentModelInfo>
+            <Size>7686016</Size>
+            <UpgradeTime>5</UpgradeTime>
+            <RebootFlag>True</RebootFlag>
+        </Package>
+        <Package InstallOrder="65">
+            <ComponentType>DISK_CTLR_Firmware</ComponentType>
+            <DisplayName>HBA355i Firmware for Dell</DisplayName>
+            <Version>17.15.08.00</Version>
+            <Build></Build>
+            <File>bundles/SAS-Non-RAID_Firmware_4CJY9_WN64_17.15.08.00_A03.EXE</File>
+            <TargetHardwareInfo>DELL</TargetHardwareInfo>
+            <TargetModelInfo Family="DELL">
+            </TargetModelInfo>
+            <TargetComponentModelInfo>
+                <Model>hba355i</Model>
+            </TargetComponentModelInfo>
+            <Size>11708376</Size>
+            <UpgradeTime>5</UpgradeTime>
+            <RebootFlag>True</RebootFlag>
+        </Package>
+        <!-- This package can only install on ESXi 7.0.0 and above -->
+        <Package InstallOrder="3">
+            <ComponentType>ESXi_VIB</ComponentType>
+            <DisplayName>PERCCLI VIB</DisplayName>
+            <Version>007.1910.0000.0000</Version>
+            <Build>01</Build>
+            <SystemName>vmware-perccli64</SystemName>
+            <File>bundles/VMWare-perccli64_007.1910.zip</File>
+            <Size>2163871</Size>
+            <UpgradeTime>1</UpgradeTime>
+            <RebootFlag>False</RebootFlag>
+        </Package>
+        <Package InstallOrder="1003">
+            <ComponentType>ESXi_VIB</ComponentType>
+            <DisplayName>Dell PTAgent for vSphere 7</DisplayName>
+            <Version>2.5.2.7</Version>
+            <Build>DEL.701.0.0.16555998</Build>
+            <SystemName>dellptagent</SystemName>
+            <File>bundles/DellPTAgent-Bundle_2.5.2-7.701_18428013.zip</File>
+            <TargetHardwareInfo>DELL</TargetHardwareInfo>
+            <TargetModelInfo Family="DELL">
+            </TargetModelInfo>
+            <Size>8465965</Size>
+            <UpgradeTime>3</UpgradeTime>
+            <RebootFlag>False</RebootFlag>
+        </Package>
+        <!--This package is for upgrade path from 4.7/4.5  -->
+        <Package InstallOrder="4">
+            <ComponentType>ESXi_VIB</ComponentType>
+            <DisplayName>Dell PTAgent</DisplayName>
+            <Version>1.9.4</Version>
+            <Build>41</Build>
+            <SystemName>dellptagent</SystemName>
+            <File>bundles/DellPTAgent-1.9.4-41-offline-bundle.zip</File>
+            <TargetHardwareInfo>DELL</TargetHardwareInfo>
+            <TargetModelInfo Family="DELL">
+            </TargetModelInfo>
+            <Size>18799950</Size>
+            <UpgradeTime>3</UpgradeTime>
+            <RebootFlag>False</RebootFlag>
+        </Package>
+        <!--This package is for upgrade path from 7.0  -->
+        <Package InstallOrder="5">
+            <ComponentType>ESXi_VIB</ComponentType>
+            <DisplayName>Dell PTAgent for vSphere 7</DisplayName>
+            <Version>2.5.2.7</Version>
+            <Build>DEL.701.0.0.16555998</Build>
+            <SystemName>dellptagent</SystemName>
+            <File>bundles/DellPTAgent-Bundle_2.5.2-7.701_18428013.zip</File>
+            <TargetHardwareInfo>DELL</TargetHardwareInfo>
+            <TargetModelInfo Family="DELL">
+            </TargetModelInfo>
+            <Size>8465965</Size>
+            <UpgradeTime>3</UpgradeTime>
+            <RebootFlag>False</RebootFlag>
+        </Package>
+        <Package InstallOrder="10">
+            <ComponentType>ESXi_VIB</ComponentType>
+            <DisplayName>VxRail Platform Service</DisplayName>
+            <Version>7.0.350</Version>
+            <Build>19240725</Build>
+            <SystemName>platform-service</SystemName>
+            <File>bundles/Platform-Service_7.0.350-19240725.zip</File>
+            <Size>2535567</Size>
+            <UpgradeTime>1</UpgradeTime>
+            <RebootFlag>False</RebootFlag>
+        </Package>
+    </Package>
+</InstallManifest>
