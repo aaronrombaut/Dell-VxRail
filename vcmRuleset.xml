@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='utf-8'?>
+<dvc>
+<!--
+This file specifies version compatibility constraint between inter-dependent
+components within the system.
+
+The supported component types are:
+ 1. VMware vCenter Server
+ 2. VMware ESXi
+ 3. VxRail Manager
+ 4. VxRail VIB
+
+Tag description for each <component>:
+
+<type>                      - needs to be one of the component type value listed above.
+<supportedVersionInfo>      - supported version for this component and only one tag per <component>.
+    <version>               - Actual version string (inclusive) - for VC and ESXi, it is AboutInfo.version;
+    <minBuild>              - Optional field: minimum build number(inclusive). This field will be used to
+                              determine if two versions match only if version string matches first.
+<nonSupported>              - non supported version for this component and only one tag per <component>.
+<dependentComponent>        - one or more dependent components of this component and can be multiple
+                              tags per <component>.
+<compatibleVersionInfo>     - one or more versions (inclusive) of each dependent component that are compatible
+                              with the supported version specified in <supportedVersionInfo>.
+
+For VMware products, refer to: KB article 1014508 for the mapping between build number and releases.
+Minimum build number is used to differentiate update releases among a same version.
+-->
+    <!-- for 7.0.350 branch only -->
+    <component>
+        <type>VxRail Host Vendor</type>
+        <nonSupported>GEN1</nonSupported>
+    </component>
+    <!-- VXR-1635, Block LCM on clusters with Quanta nodes -->
+    <component>
+        <type>VxRail Host Vendor</type>
+        <nonSupported>GEN2</nonSupported>
+    </component>
+    <component>
+        <type>VxRail Host Model</type>
+        <nonSupported>QuantaPlex T41S-2U</nonSupported>
+    </component>
+    <!-- VXR-1635, Block LCM on clusters with Quanta nodes -->
+</dvc>
